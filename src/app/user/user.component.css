@@ -1,0 +1,15 @@
+.content div:hover{
+    cursor:hover;
+
+}
+.content div{
+    margin:10px;
+    border:1px solid  black;
+}
+.content div.selected{
+    background-color:#aaa;
+}
+.content{
+    border:1px solid black;
+    margin-top: 80px;
+}

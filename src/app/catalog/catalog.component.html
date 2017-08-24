@@ -1,0 +1,19 @@
+
+<div class="content">
+  <h1>Catalog</h1>
+  <hr>
+  <table>
+    <div class="container" *ngFor="let catalogItem of catalog">
+    <tr >
+      <td rowspan="2" class="sku">{{catalogItem.sku}}</td>
+      <td class='flex'><span class="new_label" *ngIf="catalogItem.new=='1'">¡Nuevo! </span>{{catalogItem.display_name}}</td> 
+      <td class="right">Cantidad</td> 
+    </tr>
+    <tr>
+      <td>${{catalogItem.price}} pesos</td>
+      <td class="right" *ngIf="catalogItem.inventory=='1'" ><span>-</span><input placeholder="0" type="text"><span>+</span></td>
+      <td class="right out-of-stock" *ngIf="catalogItem.inventory=='0'" >Out of stock</td>
+    </tr>
+  </div>
+  </table>
+</div>

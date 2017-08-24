@@ -1,0 +1,16 @@
+<h1>Payment types</h1>
+<table>
+  <tr>  
+    <th>Type</th>
+    <th>credit card</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let payment of payments">
+    <td>{{payment._id}}</td>
+    <td>{{payment.credit_card}}</td>
+    <td><a href="#">edit</a></td>
+    <td><a href="#">del</a></td>
+  </tr>
+</table>
+  

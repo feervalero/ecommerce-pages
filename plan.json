@@ -1,0 +1,161 @@
+//database
+[
+	basket:{
+		orders:{},
+		contacts:{},
+        products:{},
+        favorites:{},
+        payments:{},
+        addresses:{
+            userid:{type:String,required:true},
+            Country:{type:String,required:true},
+            State:{type:String,required:true},
+            City:{type:String,required:true},
+            Neighbourhood:{type:String,required:true},
+            street_number:{type:String,required:true}
+        },
+	}
+
+]
+//new change
+
+
+OrderExample
+{
+	contact:"01010101",
+	created_date:"2017-07-02 15:22:33.000",
+	stage:"90",
+	status:"1",
+	products:{
+		sku:"10011002",
+		quantity:"2",
+		name:"Corrector Facial Precio Especial",
+		price:"1050.50",
+		price_discount:"700"
+	},
+	shipping_address:{
+		Country:"MX",
+		State:"Nuevo Leon",
+		City:"Monterrey",
+		Neighbourhood:"Centro",
+		street_number:"calle 1234"
+
+	},
+	total:"700",
+	total_extra:{
+		taxes:"112",
+		freight:"97.44"
+	},
+	payments:{
+		payment_type:"1",
+		credit_card:"99795729",
+		amount:"909.44",
+		status:"1"
+	}
+
+}
+
+ContactExample
+{
+	contact:"02020202",
+	first_name:"Fernando",
+	last_name:"Valero",
+	fb_id:"683063063",
+	start_date:"2017-07-06 12:00:22.000",
+	status:"1",
+	img_url:"#",
+	addresses:{},
+	lists:{
+		orders:{}
+	}
+
+}
+{
+	contact:"02020203",
+	first_name:"Jessica",
+	last_name:"Flores",
+	fb_id:"720720872",
+	start_date:"2017-05-06 12:00:22.000",
+	status:"1",
+	img_url:"#",
+	addresses:{},
+	lists:{
+		orders:{}
+	}
+
+}
+Products Example
+
+{
+	sku:"10077951"
+	display_name:"Loción para Cuerpo Thinking of Love® de Edición Limitada"
+	price:"160"
+	inventory:"1"
+	new:"0"
+}
+
+
+{"sku":"10046688","display_name":"Sombra Mineral Compacta Mary Kay® Polished Stone","price":"53.5","inventory":"1","new":"0"}
+{"sku":"10046676","display_name":"Sombra Mineral Compacta Mary Kay® Periwinkle","price":"53.5","inventory":"1","new":"0"}
+{"sku":"10046686","display_name":"Sombra Mineral Compacta Mary Kay® Rose Water","price":"53.5","inventory":"1","new":"0"}
+{"sku":"10046689","display_name":"Sombra Mineral Compacta Mary Kay® Sage","price":"39","inventory":"1","new":"0"}
+{"sku":"10075084","display_name":"Thinking of Love® 29 ml","price":"391","inventory":"1","new":"0"}
+{"sku":"10067230","display_name":"Belara Midnight® 50 ml","price":"365.5","inventory":"1","new":"1"}
+{"sku":"10081718","display_name":"Arctic Apricot","price":"182","inventory":"1","new":"1"}
+{"sku":"10081724","display_name":"Flamenco Red","price":"167","inventory":"0","new":"0"}
+{"sku":"10081721","display_name":"Magenta Chill","price":"167","inventory":"1","new":"0"}
+{"sku":"10081720","display_name":"Posh Pink","price":"182","inventory":"1","new":"0"}
+{"sku":"10077951","display_name":"Loción para Cuerpo Thinking of Love® de Edición Limitada","price":"160","inventory":"1","new":"0"}
+
+Profile 
+
+Mis compras (by Contact)
+{
+	"mismo contenido que mis ordenes"
+}
+
+Wishlist{
+	name:"mismo contenido que los partids solo que viene con el userasociado, debe ser una nueva tabla",
+	{"contact":"01010101","sku":"10046688","display_name":"Sombra Mineral Compacta Mary Kay® Polished Stone","price":"53.5","inventory":"1","new":"0"}
+}
+shipping_address:{
+	contact:"string",
+	Country:"string",
+	State:"string",
+	City:"string",
+	Neighbourhood:"string",
+	street_number:"string"
+
+}
+
+payments:{
+	payment_type:"1",
+	credit_card:"99795729",
+	amount:"909.44",
+	status:"1"
+}
+
+	
+{"contact":"01010101","sku":"10046689","display_name":"Sombra Mineral Compacta Mary Kay® Sage","price":"39","inventory":"1","new":"0"}
+{"contact":"01010101","sku":"10067230","display_name":"Belara Midnight® 50 ml","price":"365.5","inventory":"1","new":"1"}
+{"contact":"01010101","sku":"10081724","display_name":"Flamenco Red","price":"167","inventory":"0","new":"0"}
+
+menu:{
+	id:"1",
+	parent:"root",
+	submenu:{
+		id:"2",
+		displayname:"MENU 1",
+		parent:"root",
+		submenu:{
+			id:"3",
+			parent:"2",
+			displayname:"Menu 2"
+			}
+		submenu:{
+			id:"4",
+			parent:"2",
+			displayname:"Menu 3"
+			}
+	}
+}
