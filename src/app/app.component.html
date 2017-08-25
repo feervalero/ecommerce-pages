@@ -7,5 +7,7 @@
 <router-outlet></router-outlet>
 
 <footer>
-    <li *ngFor="let menu of menuActual">{{menu.name}}</li>
+    <ul>
+        <li *ngFor="let menu of menuActual" (click)="menuAction1(menu)"><a>{{menu.name}}</a></li>
+    </ul>
 </footer>

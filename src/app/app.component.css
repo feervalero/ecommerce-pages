@@ -21,3 +21,14 @@ header{
 router-outlet{
 	margin-top:100px;
 }
+footer{
+	position: fixed;
+	bottom:0;
+	background-color: greenyellow;
+	color:green;
+	width:100%;
+}
+footer ul li{
+	display: inline;
+	list-style:none;
+}

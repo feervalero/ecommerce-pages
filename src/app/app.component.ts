@@ -1,8 +1,10 @@
 import { Component,OnInit } from '@angular/core';
 import { MenusService } from "./menus.service";
+
 export class Menu{
 	id:string;
-	name:string;
+  name:string;
+  parent:string;
 }
 
 @Component({
@@ -22,20 +24,26 @@ export class AppComponent implements OnInit{
   constructor(private menusService:MenusService){}
 
   ngOnInit(){
-    this.menuActual=[{id:"",name:""}];
+    this.menuActual=[{id:"",name:"",parent:""}];
     this.getMenus();
   }
   getMenus(){
     this.menuActual.splice(0);
     this.menusService.getMenuAll().then(r=>{
       var menu = r;
+      this.menuJSON = r;
       menu.submenu.forEach(element => {
         if(element.parent=="root"){
-          this.menuActual.push({"id":element.id,name:element.displayname});
+          this.menuActual.push({"id":element.id,name:element.displayname,parent:element.parent});
         }
       });
       
     });
     
+  }
+  menuAction1(menu: Menu){
+    console.dir(this.menuJSON);
+    console.log(menu.id);
+    console.dir(this.menuJSON.submenu[menu.id]);
   }
 }
