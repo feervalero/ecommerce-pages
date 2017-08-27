@@ -8,7 +8,7 @@ export class MenusService{
   constructor(private http:Http) { }
 
   getMenuAll():Promise<any>{
-    return this.http.get("http://localhost:3000/menus")
+    return this.http.get("http://localhost:3000/api/menus")
                     .toPromise()
                     .then(r=>JSON.parse(r["_body"])[0])
                     .catch(this.ErrorHandler);

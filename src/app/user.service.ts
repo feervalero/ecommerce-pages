@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { UserClass } from "./user-class/user-class.component";
-import { USERS } from "./users/users";
+import { USERS } from "./USERS/users";
 import { Headers,Http } from "@angular/http";
 import 'rxjs/add/operator/toPromise';
 
@@ -13,33 +13,33 @@ export class UserService {
     return Promise.resolve(USERS)
    }
   getOrdersByProfile(id: string): Promise<any>{
-    return this.http.get("http://localhost:3000/orders/"+id)
+    return this.http.get("http://localhost:3000/api/orders/"+id)
                   .toPromise()
                   .then(result=>JSON.parse(result["_body"]))
                   .catch(this.ErrorHandler);
     }
 
   getFavoritesByProfile(id:string): Promise<any>{
-    return this.http.get("http://localhost:3000/favorites/"+id)
+    return this.http.get("http://localhost:3000/api/favorites/"+id)
                   .toPromise()
                   .then(result=>JSON.parse(result["_body"]))
                   .catch(this.ErrorHandler);
     }
 
   getUsersAPI(): Promise<UserClass[]>{
-    return this.http.get("http://localhost:3000/contacts")
+    return this.http.get("http://localhost:3000/api/contacts")
                .toPromise()
                .then(response=>JSON.parse(response["_body"]) as UserClass)
                .catch(this.ErrorHandler);
     }
   getPaymentsById(id:string): Promise<any>{
-    return this.http.get("http://localhost:3000/payments/"+id)
+    return this.http.get("http://localhost:3000/api/payments/"+id)
                 .toPromise()
                 .then(r=>JSON.parse(r["_body"]))
                 .catch(this.ErrorHandler);
     }
   getAddressesById(id:string): Promise<any>{
-    return this.http.get("http://localhost:3000/addresses/"+id)
+    return this.http.get("http://localhost:3000/api/addresses/"+id)
                 .toPromise()
                 .then(r=>JSON.parse(r["_body"]))
                 .catch(this.ErrorHandler);
