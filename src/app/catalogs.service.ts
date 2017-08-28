@@ -7,7 +7,7 @@ export class CatalogsService {
   constructor(private http:Http){}
 
   getCatalogList(): Promise<Catalog[]>{
-    return this.http.get("http://localhost:3000/products")
+    return this.http.get("http://localhost:3000/api/products")
                 .toPromise()
                 .then(response=>JSON.parse(response["_body"]) as Catalog)
                 .catch(this.errorHandler);
