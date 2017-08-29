@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <menuItem parent="root" id="ROPA" displayName="ROPA">
+    <menuItem id="ROPAHombre" displayName ="Hombre" parent="ROPA" />
+  </menuItem> 
+  <menuItem parent="root" id="CALZADO" displayName="CALZADO">
+    <menuItem id="CalzadoHombre" displayName ="Hombre" parent="CALZADO" />
+    <menuItem parent="CALZADO" id="CalzadoMujer" displayName="MUJER">
+    	<menuItem id="CalzadoMujer1" displayName ="Sandalias" parent="CalzadoMujer" />
+    	<menuItem id="CalzadoMujer2" displayName ="Zapatillas" parent="CalzadoMujer" />
+    </menuItem> 
+  </menuItem> 
+</menu>
