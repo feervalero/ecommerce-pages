@@ -39,8 +39,9 @@ export class AppComponent implements OnInit{
       });
       
     });
-    
   }
+
+
   menuAction1(menu: Menu){
     console.dir(this.menuJSON);
     console.log(menu.id);
