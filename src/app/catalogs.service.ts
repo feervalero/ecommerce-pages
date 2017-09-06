@@ -12,9 +12,17 @@ export class CatalogsService {
                 .then(response=>JSON.parse(response["_body"]) as Catalog)
                 .catch(this.errorHandler);
   }
+  getProductById(id: string): Promise<any>{
+    return this.http.get("http://localhost:3000/api/products/"+id)
+                .toPromise()
+                .then(response=>JSON.parse(response["_body"]))
+                .catch(this.errorHandler);
+  }
+
   errorHandler(error: any): Promise<any>{
     console.log("error ocurred",error);
     return Promise.reject(error.message);
   }
+
 
 }

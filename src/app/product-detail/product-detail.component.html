@@ -1,0 +1,26 @@
+<div *ngIf="SKU">
+  <!--TODO SCROLL UP PARA MINIATURAS-->
+  <div *ngIf="SKU.images">
+    <img src="{{SKU.images.colorchip}}" alt="{{SKU.sku}}">
+    <img src="{{SKU.images.colorchip}}" alt="{{SKU.sku}}">
+    <!--TODO ZOOM TO BIG IMAGE-->
+    <span *ngIf="SKU.new == 1">NEW</span><img src="{{SKU.images.hero}}" alt="{{SKU.sku}}">
+  </div>
+  <div>
+    <h1>{{SKU.display_name}}</h1>
+    <h5>{{SKU.sku}}</h5>
+    <h3>{{SKU.price}}</h3>
+    <div class="qty">
+      <span>-</span>
+      <input type="text" placeholder="0">
+      <span>+</span>
+    </div>
+  </div>
+  <!-- descripcion-->
+  <div>
+    <h3>Product description</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, adipisci ratione corrupti repellendus repudiandae asperiores soluta odit a minima ipsa minus illo earum, quisquam similique consectetur provident consequatur iure laborum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, adipisci ratione corrupti repellendus repudiandae asperiores soluta odit a minima ipsa minus illo earum, quisquam similique consectetur provident consequatur iure laborum.</p>
+  </div>
+  <br>
+</div>

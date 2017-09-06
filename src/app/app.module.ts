@@ -13,10 +13,17 @@ import { MyFavoritesComponent } from './my-favorites/my-favorites.component';
 import { MyAddressesComponent } from './my-addresses/my-addresses.component';
 import { MyPaymentsComponent } from './my-payments/my-payments.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
+import { ProductListItemComponent } from './product-list-item/product-list-item.component';
+import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   {
-    path:"", redirectTo:"/user",pathMatch:"full"
+    path:"", redirectTo:"/main",pathMatch:"full"
+  },
+  {
+    path:"main", component:MainComponent
   },
   {
     path:"user", component:UserComponent
@@ -26,6 +33,12 @@ const routes: Routes = [
   },
   {
     path:"profile",component:ProfileComponent
+  },
+  {
+    path:"product-detail/:sku",component:ProductDetailComponent
+  },
+  {
+    path:"cart",component:CartComponent
   }
 ]
 
@@ -38,7 +51,11 @@ const routes: Routes = [
     MyFavoritesComponent,
     MyAddressesComponent,
     MyPaymentsComponent,
-    MyOrdersComponent
+    MyOrdersComponent,
+    ProductDetailComponent,
+    CartComponent,
+    ProductListItemComponent,
+    MainComponent
     
   ],
   imports: [
