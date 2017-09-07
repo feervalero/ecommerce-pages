@@ -17,7 +17,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { CartComponent } from './cart/cart.component';
 import { ProductListItemComponent } from './product-list-item/product-list-item.component';
 import { MainComponent } from './main/main.component';
-
+import { CookieModule } from "ngx-cookie";
 const routes: Routes = [
   {
     path:"", redirectTo:"/main",pathMatch:"full"
@@ -61,6 +61,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    CookieModule.forRoot(),
     RouterModule.forRoot(routes),
     HttpModule
   ],
