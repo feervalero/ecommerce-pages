@@ -144,23 +144,3 @@ payments:{
 {"contact":"01010101","sku":"10046689","display_name":"Sombra Mineral Compacta Mary Kay® Sage","price":"39","inventory":"1","new":"0"}
 {"contact":"01010101","sku":"10067230","display_name":"Belara Midnight® 50 ml","price":"365.5","inventory":"1","new":"1"}
 {"contact":"01010101","sku":"10081724","display_name":"Flamenco Red","price":"167","inventory":"0","new":"0"}
-
-menu:{
-	id:"1",
-	parent:"root",
-	submenu:{
-		id:"2",
-		displayname:"MENU 1",
-		parent:"root",
-		submenu:{
-			id:"3",
-			parent:"2",
-			displayname:"Menu 2"
-			}
-		submenu:{
-			id:"4",
-			parent:"2",
-			displayname:"Menu 3"
-			}
-	}
-}
