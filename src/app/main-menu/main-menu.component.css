@@ -1,0 +1,14 @@
+#main-menu{
+    float:left;
+    width:20vw;
+    height:30vmax;
+    border:1px solid black;
+    margin:5px;
+}
+#container-list-menu{
+    margin-left: 20vw;
+    width:70vw;
+    height:30vmax;
+    margin:5px;
+    border:1px solid black;
+}

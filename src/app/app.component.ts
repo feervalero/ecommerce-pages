@@ -61,26 +61,13 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
     this.menuActual=[{id:"",name:"",parent:""}];
-    this.getMenus();
-    this.cookieService.putObject("order",this.orderExample);
-    console.log(this.getCookie("order"));
+    //this.cookieService.putObject("order",this.orderExample);
+    //console.log(this.getCookie("order"));
   }
   getCookie(key:string){
     return this.cookieService.getObject(key);
   }
-  getMenus(){
-    this.menuActual.splice(0);
-    this.menusService.getMenuAll().then(r=>{
-      var menu = r;
-      this.menuJSON = r;
-      menu.submenu.forEach(element => {
-        if(element.parent=="root"){
-          this.menuActual.push({"id":element.id,name:element.displayname,parent:element.parent});
-        }
-      });
-      
-    });
-  }
+  
 
 
   menuAction1(menu: Menu){

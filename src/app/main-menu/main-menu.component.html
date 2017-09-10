@@ -1,0 +1,14 @@
+<div id="main-menu">
+  <h1>
+    main-menu works!
+  </h1>
+  <span *ngIf="idItem != 'root'">
+    <a (click)="openMenu(previousParent,idItem)">go to previousParent</a>
+  </span>
+  <ul id="menuBar">
+    <li *ngFor="let item of menuItems"><a (click)="openMenu(item.href,item.parent)">{{item.displayname}}</a></li>
+  </ul>
+</div>
+<div id="container-list-menu">
+  <list-menu [id]="idItem"></list-menu>
+</div>

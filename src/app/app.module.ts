@@ -18,6 +18,9 @@ import { CartComponent } from './cart/cart.component';
 import { ProductListItemComponent } from './product-list-item/product-list-item.component';
 import { MainComponent } from './main/main.component';
 import { CookieModule } from "ngx-cookie";
+import { ListMenuComponent } from "./list-menu/list-menu.component";
+import { MainMenuComponent } from './main-menu/main-menu.component';
+
 const routes: Routes = [
   {
     path:"", redirectTo:"/main",pathMatch:"full"
@@ -29,7 +32,11 @@ const routes: Routes = [
     path:"user", component:UserComponent
   },
   {
-    path:"catalog-list", component:CatalogComponent
+    path:"catalog-list", component:CatalogComponent,children:[
+      {
+        path:'',component:MainMenuComponent
+      }
+  ]
   },
   {
     path:"profile",component:ProfileComponent
@@ -48,6 +55,7 @@ const routes: Routes = [
     UserComponent,
     CatalogComponent,
     ProfileComponent,
+    ListMenuComponent,
     MyFavoritesComponent,
     MyAddressesComponent,
     MyPaymentsComponent,
@@ -55,7 +63,8 @@ const routes: Routes = [
     ProductDetailComponent,
     CartComponent,
     ProductListItemComponent,
-    MainComponent
+    MainComponent,
+    MainMenuComponent
     
   ],
   imports: [
