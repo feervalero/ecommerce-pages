@@ -19,6 +19,8 @@
 ]
 // hola fer
 //camnio automatico
+//con este comando evitas poner la contraseña siempre
+//git config credential.helper store
 OrderExample
 {
 	contact:"01010101",
