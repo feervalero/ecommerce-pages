@@ -14,13 +14,11 @@ export class ListMenuComponent implements OnChanges {
   ngOnChanges(changes:SimpleChanges) {
     if(changes.id.currentValue !== undefined){
       this.getSubMenu(changes.id.currentValue);
-      console.dir(this.PartIDs);
     }
     
   }
   getSubMenu(id: any){
     this.PartIDs = [];
-    console.log("id",id);
     this.menusService.getMenus().then(data=>{
       var parse = new DOMParser();
       this.xml = parse.parseFromString(data,"text/xml");
@@ -29,7 +27,23 @@ export class ListMenuComponent implements OnChanges {
         if(menulists[i].attributes['id'].value.toString()==id){
           for (var j = 0; j < menulists[i].children.length; j++) {
             var sku = menulists[i].children[j].innerHTML;
-            this.PartIDs.push(sku);
+            var products = this.xml.getElementsByTagName("Product");
+            for (var k = 0; k < products.length; k++) {
+              var product = products[k];
+              if(product.attributes['sku'].value.toString()===sku){
+                var item =
+                {img:"45",
+                displayname:product.attributes['name'].value.toString(),
+                sku:product.attributes['sku'].value.toString(),
+                price:product.attributes['unitRetailPrice'].value.toString(),
+                };
+
+                
+                
+                this.PartIDs.push(item);
+              }
+            }
+            
           }
         }
       }

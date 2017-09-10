@@ -17,8 +17,251 @@
     <PartID>10081721</PartID>
   </menulist>
   <menulist id="CalzadoMujer2">
-    <PartID>10081718</PartID>
-    <PartID>10081721</PartID>
+    <PartID>10049513</PartID>
+    <PartID>10049516</PartID>
+    <PartID>10049591</PartID>
+    <PartID>10049594</PartID>
   </menulist>
+  <products>
+    <Product id="0943b748-d9bc-4124-908f-239dfff0a06a" name="Very Light" sku="10072818" unitPointValue="26" unitRetailPrice="151.5" startDate="2014-02-10T06:00:00" endDate="2015-01-01T07:59:59.999" scheduleName="Image Updated on 3/5/2014 6:25:09 PM by USA\valerof">
+      <Description>Very Light</Description>
+    </Product>
+    <Product id="cd9ce263-ee24-4c73-9a1c-a3e35a20531c" name="Light-to-Medium" sku="10072819" unitPointValue="26" unitRetailPrice="151.5" startDate="2014-02-10T06:00:00" endDate="2015-01-01T07:59:59.999" scheduleName="Image Updated on 3/5/2014 6:25:09 PM by USA\valerof">
+      <Description>Light-to-Medium</Description>
+    </Product>
+    <Product id="545e2df4-da70-4e63-bb24-84173881accd" name="Medium-to-Deep" sku="10072820" unitPointValue="26" unitRetailPrice="151.5" startDate="2014-02-10T06:00:00" endDate="2015-01-01T07:59:59.999" scheduleName="Image Updated on 3/5/2014 6:25:10 PM by USA\valerof">
+      <Description>Medium-to-Deep</Description>
+    </Product>
+    <Product id="81c5e7be-a93c-4a03-b1a4-9d2ac40aa529" name="Deep" sku="10072821" unitPointValue="26" unitRetailPrice="151.5" startDate="2014-02-10T06:00:00" endDate="2015-01-01T07:59:59.999" scheduleName="Image Updated on 3/5/2014 6:25:10 PM by USA\valerof">
+      <Description>Deep</Description>
+    </Product>
+    <Product id="733844dc-21b4-4485-a0b6-8682aa75640d" name="Light / Medium" sku="10069076" unitPointValue="24" unitRetailPrice="159" startDate="2014-02-10T06:00:00" scheduleName="Image Updated on 3/5/2014 6:25:09 PM by USA\valerof">
+      <Description>Light / Medium</Description>
+    </Product>
+    <Product id="f361c0f5-fb27-4af7-b4ff-4fb1b1357d8f" name="Kit de Inicio - Color" sku="10060013" unitRetailPrice="343.96" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 2/19/2014 6:46:58 AM by USA\lirac">
+      <Description>Kit de Inicio - Color</Description>
+    </Product>
+    <Product id="cedeb119-6949-43df-885e-1a561be4c2c5" name="Crema Limpiadora Facial Botanical Effects® para Piel Normal 113 g" sku="10049513" unitPointValue="21" unitRetailPrice="133" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:35:19 PM by USA\valerof">
+    </Product>
+    <Product id="834243f8-a36d-4101-abf3-515ebb803fc6" name="Crema Limpiadora Facial Botanical Effects® para Piel Grasa 113 g" sku="10049516" unitPointValue="21" unitRetailPrice="133" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:35:19 PM by USA\valerof">
+    </Product>
+    <Product id="432dcf98-7388-478b-9b4b-639ad2d43d2f" name="Crema Hidratante Facial Botanical Effects® para Piel Normal 88 mL" sku="10049591" unitPointValue="24" unitRetailPrice="146" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:56 PM by USA\valerof">
+    </Product>
+    <Product id="9af02e32-c987-4e42-a4b5-a8ac11b3467a" name="Crema Hidratante Facial Botanical Effects® para Piel Grasa 88 mL" sku="10049594" unitPointValue="24" unitRetailPrice="146" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:03 PM by USA\valerof">
+    </Product>
+    <Product id="3b491abf-57a1-429f-9893-aea368568ee9" name="Loción Refrescante Botanical Effects® para Piel Seca" sku="10049797" unitPointValue="20" unitRetailPrice="115.00" startDate="2014-02-19T07:00:00" endDate="2014-03-03T15:59:59.999" scheduleName="Image Updated on 2/21/2014 6:35:19 PM by USA\valerof">
+      <Description>Loción Refrescante Botanical Effects® para Piel Seca</Description>
+    </Product>
+    <Product id="b5d11916-7295-46f5-aea6-474860166676" name="Loción Refrescante Botanical Effects® para Piel Normal 147 mL" sku="10049807" unitPointValue="20" unitRetailPrice="128.5" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:35:19 PM by USA\valerof">
+    </Product>
+    <Product id="5a200198-9cd7-4158-a28d-3eb858f0faf3" name="Loción Refrescante Botanical Effects® para Piel Grasa 147 mL" sku="10049810" unitPointValue="20" unitRetailPrice="128.5" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:35:20 PM by USA\valerof">
+      <Description>Refresca retirando suavemente el exceso de residuos en la piel. Controla la piel grasa con árbol de té blanco y guayaba.</Description>
+    </Product>
+    <Product id="450bd2bf-8a1a-4d05-91f7-c9a204acccec" name="Mascarilla Facial Botanical Effects® para Piel Normal 113 g" sku="10050141" unitPointValue="28" unitRetailPrice="171.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:56 PM by USA\valerof">
+    </Product>
+    <Product id="6207e369-b5a3-4539-aa8e-a644b8d9da9d" name="Mascarilla Facial Botanical Effects® para Piel Grasa 113 g" sku="10050144" unitPointValue="28" unitRetailPrice="171.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="August Package on 28/07/2014 09:36:18 a.m.">
+      <Description>Revitaliza la piel removiendo las impurezas, se quita fácilmente con agua. Controla la piel grasa con árbol de té blanco y guayaba.</Description>
+    </Product>
+    <Product id="12d7703d-11a2-4be1-8aba-f1f632327fc2" name="Crema Limpiadora Facial 3 en 1 para piel normal a seca 127g" sku="10026940" unitPointValue="35" unitRetailPrice="213.5" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 24/10/2014 04:32:50 p.m.">
+      <Filter type="MaryKay.Commerce.Orders.OrderTypeFilter,MaryKay.Commerce" initData="Mode=Include;OrderTypes=Cosmetic,NoCharge,Employee" />
+    </Product>
+    <Product id="45eb86cf-bc06-4828-961b-8e16bd134ee0" name="Crema Limpiadora Facial 3 en 1 para piel combinada a grasa 127g" sku="10026941" unitPointValue="35" unitRetailPrice="213.5" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 24/10/2014 04:34:12 p.m.">
+      <Filter type="MaryKay.Commerce.Orders.OrderTypeFilter,MaryKay.Commerce" initData="Mode=Include;OrderTypes=Cosmetic,NoCharge,Employee" />
+    </Product>
+    <Product id="c2f543c0-4502-400c-b8da-df4b31ca1615" name="Loción Humectante Facial Intensiva para piel normal a seca 88 mL" sku="10026925" unitPointValue="41" unitRetailPrice="246" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 24/10/2014 04:36:53 p.m.">
+      <Filter type="MaryKay.Commerce.Orders.OrderTypeFilter,MaryKay.Commerce" initData="Mode=Include;OrderTypes=Cosmetic,NoCharge,Employee" />
+    </Product>
+    <Product id="4daa39f1-8635-43d2-9709-bcf714813d7a" name="Loción Humectante Facial Intensiva para piel combinada a grasa 88 mL" sku="10026926" unitPointValue="41" unitRetailPrice="246" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 24/10/2014 04:38:35 p.m.">
+      <Filter type="MaryKay.Commerce.Orders.OrderTypeFilter,MaryKay.Commerce" initData="Mode=Include;OrderTypes=Cosmetic,NoCharge,Employee" />
+    </Product>
+    <Product id="762fedb6-c70d-450f-8300-605b427942bd" name="Crema Intensiva para el Contorno de los Ojos TimeWise® 18 g" sku="10029728" unitPointValue="41" unitRetailPrice="238" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 27/10/2014 10:21:40 a.m.">
+    </Product>
+    <Product id="c986980b-5027-4b9a-a242-8138b90f77d3" name="Crema Reafirmante para el Contorno de los Ojos TimeWise® 14 g" sku="10027908" unitPointValue="54" unitRetailPrice="300.00" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 27/10/2014 10:22:10 a.m.">
+    </Product>
+    <Product id="7a362759-d839-442f-8162-bb504715a5d0" name="Espuma Limpiadora Facial Volu-Firm® TimeWise Repair® 127 g" sku="10053074" unitPointValue="45" unitRetailPrice="271.5" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 24/10/2014 04:21:21 p.m.">
+    </Product>
+    <Product id="48d015d9-7898-4bea-bec8-279aa3ac9654" name="Set Introductorio del Sistema para Cutis con Tendencia al Acné" sku="10021628" unitPointValue="46" unitRetailPrice="273" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:34:57 PM by USA\valerof">
+      <Filter type="MaryKay.Commerce.Orders.OrderTypeFilter,MaryKay.Commerce" initData="Mode=Exclude;OrderTypes=DirectorOnly,Prize,NewAgreement,SalesBooth,EventRegistration,UnitSupportPackage,BusinessUse,CareerApparel,DirectorSalesBooth" />
+    </Product>
+    <Product id="3fb8e308-b641-4aaa-99a7-3994ec98d1d6" name="Gel Limpiador para Cutis con Tendencia al Acné 127 g" sku="10020374" unitPointValue="23" unitRetailPrice="146" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:54 PM by USA\valerof">
+    </Product>
+    <Product id="b2cf2eee-81d1-441e-8c59-9dc713d5f4df" name="Gel Refinador de Poros para Cutis con Tendencia al Acné 50 g" sku="10020377" unitPointValue="23" unitRetailPrice="146" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:54 PM by USA\valerof">
+    </Product>
+    <Product id="2c8b168e-08ac-4b6d-980b-992c163d88ef" name="Crema Focalizada para Cutis con Tendencia al Acné 29 g" sku="10020379" unitPointValue="17" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:54 PM by USA\valerof">
+    </Product>
+    <Product id="8c2624fd-c8bd-44f7-8b03-9c5a6bc6d93e" name="Jabón Facial en Barra 113 g" sku="10055844" unitPointValue="28" unitRetailPrice="160" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="July Package on 11/06/2014 02:14:49 p.m.">
+      <Description>Jabón Facial en Barra 113 g</Description>
+    </Product>
+    <Product id="7437dd94-1c1e-4530-9340-07fb293434f9" name="Gel Refrescante para Después de Afeitar MKMen® 73 ml" sku="10010338" unitPointValue="26" unitRetailPrice="171.5" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:34:49 PM by USA\valerof">
+    </Product>
+    <Product id="80bfefd8-bf6b-4fd5-ab53-20333f25390f" name="Loción Facial Hidratante Intensiva SPF 30 88 mL" sku="10060291" unitPointValue="41" unitRetailPrice="236" startDate="2014-02-10T06:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 7/1/2017 5:46:48 PM by USA\rojasa">
+      <Description>Loción Facial Hidratante Intensiva SPF 30 88 mL</Description>
+    </Product>
+    <Product id="09e89423-9434-4eea-abba-9a383884fd7d" name="Cabezales para cepillo de repuesto Skinvigorate® paquete con 2" sku="10066328" unitPointValue="18" unitRetailPrice="124" startDate="2014-02-10T06:00:00" scheduleName="Image Updated on 2/21/2014 6:35:43 PM by USA\valerof">
+      <Description>Cabezales para cepillo de repuesto Skinvigorate® paquete con 2</Description>
+      <Filter type="MaryKay.Commerce.Orders.OrderTypeFilter,MaryKay.Commerce" initData="Mode=Include;OrderTypes=Cosmetic,NoCharge,Employee" />
+    </Product>
+    <Product id="52f5be89-37eb-47c8-b18f-22999029a11f" name="Loción Facial Matificante 17 mL" sku="10031573" unitPointValue="20" unitRetailPrice="120" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:58 PM by USA\valerof">
+    </Product>
+    <Product id="57434aad-7b8b-4ac4-9288-a8734b8d9aa5" name="Loción Desmaquillante de Ojos Libre de Aceite Mary Kay® 110 mL" sku="10029726" unitPointValue="25" unitRetailPrice="170" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="May Package on 23/04/2014 04:39:54 p.m.">
+    </Product>
+    <Product id="730c2c0a-7386-47ec-9f75-3f3798a2bae9" name="Gel Refrescante para Párpados Mary Kay® 11 g" sku="10029739" unitPointValue="23" unitRetailPrice="152.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:58 PM by USA\valerof">
+    </Product>
+    <Product id="fe5e510a-e258-4eee-a072-86577fc44f95" name="Ivory 100" sku="10041995" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:01 PM by USA\valerof">
+    </Product>
+    <Product id="c6e65e9f-abfc-40d4-8df5-c2b1488ef1cb" name="Ivory 200" sku="10041998" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:02 PM by USA\valerof">
+    </Product>
+    <Product id="31cf4f44-36c9-43b1-83e2-8e8fe83fbf49" name="Beige 302" sku="10042003" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:02 PM by USA\valerof">
+    </Product>
+    <Product id="94538729-a476-45a2-8cd0-7f85ac5e8f01" name="Beige 304" sku="10042004" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:02 PM by USA\valerof">
+    </Product>
+    <Product id="e6bed3e7-83da-4279-92c6-55d161b21b7d" name="Beige 402" sku="10042007" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:02 PM by USA\valerof">
+    </Product>
+    <Product id="f1eff574-1607-4ef8-870c-32863e317b6e" name="Bronze 500" sku="10042009" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:03 PM by USA\valerof">
+    </Product>
+    <Product id="aba956b2-2c07-4ef4-bb2e-e9e56be73b59" name="Ivory 1" sku="10040984" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:01 PM by USA\valerof">
+    </Product>
+    <Product id="05283f42-2a55-4f54-8436-43ccc9e3b8f7" name="Ivory 2" sku="10040985" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:01 PM by USA\valerof">
+    </Product>
+    <Product id="80d7af54-f981-4818-adc2-a17fd28c140a" name="Beige 1" sku="10040987" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:01 PM by USA\valerof">
+    </Product>
+    <Product id="0a51d6af-72c5-44cd-9725-56d9159bb39f" name="Beige 2" sku="10040989" unitPointValue="19" unitRetailPrice="125" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:01 PM by USA\valerof">
+    </Product>
+    <Product id="de06603a-fdc3-4d0d-8643-76b1bc6307d3" name="Ivory 1" sku="10014696" unitPointValue="18" unitRetailPrice="111.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:52 PM by USA\valerof">
+    </Product>
+    <Product id="2c81bc59-f012-4db9-9c21-3d13626a1869" name="Ivory 2" sku="10014697" unitPointValue="18" unitRetailPrice="111.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:53 PM by USA\valerof">
+    </Product>
+    <Product id="e2254361-8e26-4f8a-9f47-2f174b2011b6" name="Beige 1" sku="10014698" unitPointValue="18" unitRetailPrice="111.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:53 PM by USA\valerof">
+    </Product>
+    <Product id="15cdb328-c9f9-46e5-b1c7-3c50f20e27fb" name="Beige 2" sku="10014699" unitPointValue="18" unitRetailPrice="111.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:53 PM by USA\valerof">
+    </Product>
+    <Product id="30492e17-22aa-48cd-b616-dbe223d97118" name="Beige 3" sku="10014701" unitPointValue="18" unitRetailPrice="111.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:53 PM by USA\valerof">
+    </Product>
+    <Product id="d5bd2caf-60ae-4713-be61-237e0f5b8ddf" name="Beige 4" sku="10014702" unitPointValue="18" unitRetailPrice="111.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:53 PM by USA\valerof">
+    </Product>
+    <Product id="d5938932-01c7-4b7e-9507-79f030c193c2" name="Ivory 1" sku="10015135" unitPointValue="14" unitRetailPrice="94" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 8/1/2015 4:08:48 PM by USA\valerof">
+    </Product>
+    <Product id="6aeac545-efb4-41ab-98ef-c91434df1b6b" name="Ivory 2" sku="10015136" unitPointValue="14" unitRetailPrice="94" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 8/1/2015 4:08:49 PM by USA\valerof">
+    </Product>
+    <Product id="ba52bf1a-a263-4ae3-a3fd-df6bf73c0a6b" name="Beige 1" sku="10015137" unitPointValue="14" unitRetailPrice="94" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 8/1/2015 4:08:49 PM by USA\valerof">
+    </Product>
+    <Product id="346ba06c-4809-4748-9d59-acf8be844541" name="Beige 2" sku="10015138" unitPointValue="14" unitRetailPrice="94" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 8/1/2015 4:08:49 PM by USA\valerof">
+    </Product>
+    <Product id="135b7f78-7146-420e-aef2-75439e5fd73f" name="Estuche para el Cuidado de las Manos Satin Hands® Libre de Fragancia" sku="10032362" unitPointValue="69" unitRetailPrice="421.5" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:35:05 PM by USA\valerof">
+    </Product>
+    <Product id="75cd8474-3817-45f6-ad66-3b6d86eef313" name="Crema para Manos Satin Hands® Libre de Fragancia" sku="10031832" unitPointValue="20" unitRetailPrice="111" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:35:05 PM by USA\valerof">
+    </Product>
+    <Product id="554758a0-8228-4e44-99ad-4c66a264dce1" name="Crema para Manos y Escote con FPS 15 TimeWise Body™" sku="10032946" unitPointValue="35" unitRetailPrice="206" startDate="2014-02-19T07:00:00" endDate="2014-10-01T06:59:59.999" scheduleName="MKT_NovemberPackage2014 on 27/10/2014 10:23:42 a.m.">
+    </Product>
+    <Product id="424e735b-3ecb-4b5d-aa4c-77282eff844b" name="Loción Humectante para Pies y Piernas 88 ml" sku="10014096" unitPointValue="19" unitRetailPrice="133" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 4/1/2017 5:54:24 PM by USA\valerof">
+    </Product>
+    <Product id="fd5ddf4f-490f-4547-aa1b-dfbaa9e9b897" name="Gel Corporal Restaurador para Después de Asolearse 192 ml" sku="10050165" unitPointValue="23" unitRetailPrice="150" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 4/1/2017 5:54:31 PM by USA\valerof">
+    </Product>
+    <Product id="102d2c61-2790-4690-8a0e-1430fbd04e17" name="Crema Limpiadora Exfoliante para Cuerpo Lotus &amp; Bamboo 226 g" sku="10011462" unitPointValue="26" unitRetailPrice="177" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 4/1/2017 5:54:23 PM by USA\valerof">
+    </Product>
+    <Product id="75483c31-b033-4b12-b8a7-36e841567760" name="Loción Corporal Nutriente Lotus &amp; Bamboo 236 ml" sku="10011410" unitPointValue="26" unitRetailPrice="192" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:34:49 PM by USA\valerof">
+    </Product>
+    <Product id="322948a5-9942-447c-b0ef-f36890b7b3a8" name="Fragancia Desodorante Corporal Lotus &amp; Bamboo 147 ml" sku="10011443" unitPointValue="35" unitRetailPrice="235" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 2/21/2014 6:34:50 PM by USA\valerof">
+    </Product>
+    <Product id="ef291ae8-4781-438c-b3b7-a7ac8c5e9066" name="True Passion Noir® 60 mL" sku="10069590" unitPointValue="42" unitRetailPrice="263" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 7/1/2016 2:52:48 PM by USA\gonzaleze">
+      <Description>True Passion Noir® 60 mL</Description>
+    </Product>
+    <Product id="863bfc43-574c-46aa-a58c-0e631cbfdd7b" name="Black Diamonds® 60 ml" sku="10056903" unitPointValue="36" unitRetailPrice="231" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 7/1/2016 2:52:46 PM by USA\gonzaleze">
+      <Description>Black Diamonds® 60 ml</Description>
+    </Product>
+    <Product id="23c70ca2-b7ad-4e63-8a6a-2e5b3b224b23" name="Forever Orchid® 50 mL" sku="10033691" unitPointValue="38" unitRetailPrice="228.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:55 PM by USA\valerof">
+      <Description>Es floral, ligera y fresca.</Description>
+    </Product>
+    <Product id="9686bb9d-171a-44dd-8d22-899a11603644" name="Simply Cotton® 50 mL" sku="10020029" unitPointValue="38" unitRetailPrice="228.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:58 PM by USA\valerof">
+      <Description>Es limpia y refrescante.</Description>
+    </Product>
+    <Product id="40c504b8-1401-4fe3-9de0-9eb94277fb23" name="Warm Amber® 50 mL" sku="10020028" unitPointValue="38" unitRetailPrice="228.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:57 PM by USA\valerof">
+    </Product>
+    <Product id="48da57e1-765a-4a23-9a1d-ffcb529fae12" name="Belara Midnight® 50 mL" sku="10067230" unitPointValue="58" unitRetailPrice="347" startDate="2014-02-10T06:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="MarchPackage2015 on 20/02/2015 11:24:51 a.m.">
+      <Description>Belara Midnight® Eau de Parfum 50 mL</Description>
+    </Product>
+    <Product id="1da6125a-d9bb-490c-bcb3-710170915579" name="Belara® 50 mL" sku="10192900" unitPointValue="58" unitRetailPrice="347" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:57 PM by USA\valerof">
+      <Description>Una mezcla revitalizante de elementos florales luminosos y almizcle cremoso.</Description>
+    </Product>
+    <Product id="45f982f4-614c-417d-b9c8-5c560778d1e2" name="Bella Belara® 50 mL" sku="10012512" unitPointValue="58" unitRetailPrice="347" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:57 PM by USA\valerof">
+    </Product>
+    <Product id="568f1776-7ce6-4dfb-83bb-e2f686d4b80a" name="Thinking of You® 29 ml" sku="10037726" unitPointValue="57" unitRetailPrice="336" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:59 PM by USA\valerof">
+    </Product>
+    <Product id="fe59be2a-36dd-48b7-8d99-c506ea1bfe14" name="Velocity® 50 mL" sku="10168700" unitPointValue="53" unitRetailPrice="297.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:57 PM by USA\valerof">
+    </Product>
+    <Product id="4cc61b21-9e5b-4573-b7e5-85370c8c64d3" name="Elige® 50 mL" sku="10397300" unitPointValue="62" unitRetailPrice="371.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:08 PM by USA\valerof">
+    </Product>
+    <Product id="c79560c8-6589-4f91-95b6-768fa403fa60" name="Journey® 50 mL" sku="10166700" unitPointValue="58" unitRetailPrice="352" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:02:07 PM by USA\valerof">
+    </Product>
+    <Product id="afaeb9d9-d648-4a99-9fb1-3188b1728982" name="Upscale Black® Eau de Toilette 75 mL" sku="10067409" unitPointValue="48" unitRetailPrice="283" startDate="2014-02-10T06:00:00" endDate="2014-07-01T06:59:59.999" scheduleName="September Package on 12/08/2014 12:30:07 p.m.">
+      <Description>Upscale Black® Eau de Toilette 75 mL</Description>
+      <Filter type="MaryKay.Commerce.Orders.OrderTypeFilter,MaryKay.Commerce" initData="Mode=Include;OrderTypes=Cosmetic,NoCharge,Employee" />
+    </Product>
+    <Product id="5931f802-98a4-4db2-8385-441c9ea38b1e" name="Velocity® para Él 59 mL" sku="10501700" unitPointValue="57" unitRetailPrice="318.00" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:57 PM by USA\valerof">
+    </Product>
+    <Product id="ebaa3ef1-3a05-4a29-9d6b-e1eb2ab98a58" name="Citrus Flirt" sku="10059684" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="1ce82d63-6bae-4b5f-be5f-5da451a9a76a" name="Firecracker" sku="10054828" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="204fbeb6-a686-4b33-bd1c-f0e2ae1b282f" name="Sassy Fuchsia" sku="10059677" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="89726c89-2e23-4827-95cc-700fba9167ef" name="Sizzling Red" sku="10054829" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="42d5ee81-b147-4ea3-913a-fcd734602248" name="Tangerine Pop" sku="10059679" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="ae455531-1895-4912-bfee-fc5ae9e899f7" name="Color me Coral" sku="10054822" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 5/9/2014 7:30:38 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="b2d3a037-478b-468d-9b37-d3743ed5fe2e" name="Mystic Plum" sku="10054831" unitPointValue="24" unitRetailPrice="160" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="ea6d184e-01f3-4a63-9587-f8891f79eaac" name="Natural Beauté" sku="10054825" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="33b12228-7118-46a9-b12b-a8c0a8668679" name="Spice ´n´ Nice" sku="10054832" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="1c6d9d4e-a9ff-4be7-9e23-6cc0644450d8" name="Wild about Pink" sku="10054821" unitPointValue="25" unitRetailPrice="167" startDate="2014-02-19T07:00:00" scheduleName="Image Updated on 3/5/2014 6:25:08 PM by USA\valerof">
+      <Description>Sumerge tus labios en una nueva dimensión de color con una suave experiencia de humectación intensa. Con ingredientes avanzados para suavizar la apariencia de finas líneas y ayudar a lucir unos labios con mayor volumen.</Description>
+    </Product>
+    <Product id="b6f3b5bc-03cd-4077-9a54-d7651e6dba36" name="Amber Suede" sku="10022821" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:28 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="45679c58-ab2b-45d7-b298-9707e61c9088" name="Apple Berry" sku="10022827" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:29 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="ae81c607-fdd7-453d-bb7d-d8875d8ff284" name="Apricot Glaze" sku="10022835" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:30 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="08ad5e26-9c43-4f8d-9d02-b1599ca58bc8" name="Berry Kiss" sku="10022829" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:29 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="05702292-a658-452d-94a8-224f06fc2527" name="Downtown Brown" sku="10022823" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:29 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="3fb07306-ec58-4dfd-9d19-bee5c22dd20f" name="Dusty Rose" sku="10022843" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:31 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="243c7220-3836-44f0-8432-b0006471da88" name="Frosted Rose" sku="10022837" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:31 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="57058d62-f422-4ee1-b894-48eb2079fd5e" name="Fuchsia" sku="10035992" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:35 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="43ef4e0a-9100-4cc0-9fe4-727314f9f74c" name="Garnetfrost" sku="10022833" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:30 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="b152cebe-bc88-4705-962f-18d9d8e41ea1" name="Gingerbread" sku="10022822" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:29 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+    <Product id="4d6b9c8d-b6af-406d-be3e-f0a519d4f56c" name="Mocha Freeze" sku="10022832" unitPointValue="16" unitRetailPrice="111" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 5/9/2014 7:30:30 PM by USA\valerof">
+      <Description>Labial de larga duración que se desliza fácilmente gracias a su textura ligera y cremosa brindándote humectación y un color duradero que no se corre. La fórmula de este lápiz labial ahora es libre de fragancia con un ligero toque de sabor a vainilla. Enriquecido con derivados de vitaminas E y C brinda extraordinarios beneficios contra las finas líneas causadas por los radicales libres.</Description>
+    </Product>
+  </products>
 </menu>
 

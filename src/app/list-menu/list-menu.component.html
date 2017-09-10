@@ -3,5 +3,16 @@
 </p>
 
 <ul>
-  <li *ngFor="let sku of PartIDs">{{sku}}</li>
+  <li *ngFor="let item of PartIDs">
+    {{item.sku}} - {{item.displayname}}
+  </li>
 </ul>
+
+<product-list-item *ngFor="let item of PartIDs" 
+[price]="item.price"
+[sku]="item.sku"
+[displayname]="item.displayname"
+[img]="item.img"
+[quantity]="0"
+>
+</product-list-item>
