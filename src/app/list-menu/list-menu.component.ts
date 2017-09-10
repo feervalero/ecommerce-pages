@@ -8,30 +8,32 @@ import { MenusService } from "../menus.service";
 export class ListMenuComponent implements OnChanges {
   @Input() id:any;
   xml:any;
+  PartIDs:any[] = [];
   constructor(private menusService:MenusService) { }
 
   ngOnChanges(changes:SimpleChanges) {
     if(changes.id.currentValue !== undefined){
       this.getSubMenu(changes.id.currentValue);
+      console.dir(this.PartIDs);
     }
+    
   }
   getSubMenu(id: any){
-  
+    this.PartIDs = [];
+    console.log("id",id);
     this.menusService.getMenus().then(data=>{
       var parse = new DOMParser();
       this.xml = parse.parseFromString(data,"text/xml");
-      var mcs = this.xml.getElementsByTagName("menuItem");
-      for (var i = 0; i < mcs.length; i++) {
-        if(mcs[i].attributes['parent'].value.toString()==id){
-          console.log({
-            parent:mcs[i].attributes["parent"].value,
-            id:mcs[i].attributes["id"].value,
-            collapsed:"1",
-            href:mcs[i].attributes["id"].value,
-            displayname:mcs[i].attributes["displayName"].value.toString()
-          });
+      var menulists = this.xml.getElementsByTagName("menulist");
+      for (var i = 0; i < menulists.length; i++) {
+        if(menulists[i].attributes['id'].value.toString()==id){
+          for (var j = 0; j < menulists[i].children.length; j++) {
+            var sku = menulists[i].children[j].innerHTML;
+            this.PartIDs.push(sku);
+          }
         }
       }
+      
     })
   }
 

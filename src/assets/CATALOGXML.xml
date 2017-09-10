@@ -10,4 +10,15 @@
     	<menuItem id="CalzadoMujer2" displayName ="Zapatillas" parent="CalzadoMujer" />
     </menuItem> 
   </menuItem> 
+  <menulist id="ROPA">
+    <PartID>10067230</PartID>
+    <PartID>10081718</PartID>
+    <PartID>10081724</PartID>
+    <PartID>10081721</PartID>
+  </menulist>
+  <menulist id="CalzadoMujer2">
+    <PartID>10081718</PartID>
+    <PartID>10081721</PartID>
+  </menulist>
 </menu>
+

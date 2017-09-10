@@ -19,8 +19,6 @@ export class MainMenuComponent implements OnInit {
     this.getMenus();
   }
   getMenus(){
-    
-    console.log(this.initMenuItems);
     this.menuService.getMenus().then(xml=>{
       var parser = new DOMParser();
       this.menus = parser.parseFromString(xml,"text/xml");
