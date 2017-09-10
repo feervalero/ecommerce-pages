@@ -8,11 +8,13 @@
   </li>
 </ul>
 
-<product-list-item *ngFor="let item of PartIDs" 
-[price]="item.price"
-[sku]="item.sku"
-[displayname]="item.displayname"
-[img]="item.img"
-[quantity]="0"
->
-</product-list-item>
+<div id="grid">
+    <grid-item-1 *ngFor="let item of PartIDs"
+    [sku]="item.sku" 
+    [displayname]="item.displayname" 
+    [price]="item.price" 
+    [new]="1"
+    class="grid-1">
+  </grid-item-1>
+  
+</div>
