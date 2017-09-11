@@ -21,10 +21,10 @@ import { CookieModule } from "ngx-cookie";
 import { ListMenuComponent } from "./list-menu/list-menu.component";
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { GridItem1Component } from './grid-item-1/grid-item-1.component';
-
+import { LoginComponent } from "./login/login.component";
 const routes: Routes = [
   {
-    path:"", redirectTo:"/main",pathMatch:"full"
+    path:"", redirectTo:"/catalog-list",pathMatch:"full"
   },
   {
     path:"main", component:MainComponent
@@ -50,8 +50,11 @@ const routes: Routes = [
   },
   {
     path:"grid-item-1",component:GridItem1Component
+  },
+  {
+    path:"login",component:LoginComponent,outlet:'login'
   }
-
+  
 ]
 
 @NgModule({
@@ -61,6 +64,7 @@ const routes: Routes = [
     CatalogComponent,
     ProfileComponent,
     ListMenuComponent,
+    LoginComponent,
     MyFavoritesComponent,
     MyAddressesComponent,
     MyPaymentsComponent,

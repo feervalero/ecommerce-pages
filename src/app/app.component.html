@@ -6,7 +6,7 @@
             <input type="text">
             <span *ngIf="status == true; else statuselse">Hola Fernando</span>
             <!--or-->
-            <ng-template #statuselse><a href="#">Login!</a></ng-template>
+            <ng-template #statuselse><a href="/login">Login!</a></ng-template>
             <div id="bag">{{BAG.count}}</div>
         </div>
     </div>
@@ -16,7 +16,7 @@
     <a routerLink="/profile">profile</a>
 </header>
 <router-outlet></router-outlet>
-
+<router-outlet name="login"></router-outlet>
 <footer>
     <ul>
         <li *ngFor="let menu of menuActual" (click)="menuAction1(menu)"><a>{{menu.name}}</a></li>
