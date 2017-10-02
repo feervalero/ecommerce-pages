@@ -9,6 +9,7 @@ export class ListMenuComponent implements OnChanges {
   @Input() id:any;
   xml:any;
   PartIDs:any[] = [];
+  viewType: any = 1;
   constructor(private menusService:MenusService) { }
 
   ngOnChanges(changes:SimpleChanges) {
@@ -16,6 +17,9 @@ export class ListMenuComponent implements OnChanges {
       this.getSubMenu(changes.id.currentValue);
     }
     
+  }
+  switchView(x){
+    return x == '1' ? this.viewType = '0' : this.viewType = '1';
   }
   getSubMenu(id: any){
     this.PartIDs = [];

@@ -1,0 +1,38 @@
+#list-item-1-container{
+    display:flex;
+    flex-direction: row;
+    margin: 10px 0;
+    background-color:white;
+    padding: 0 30px;
+}
+#list-item-title{
+    flex:100%;
+}
+#list-item-image,#list-item-price,#list-item-quantity{
+    height: 80px;
+    width: 80px;
+}
+#list-item-image img{
+    width:40px;
+    height:40px;
+    padding:20px;
+}
+#list-item-price{
+    text-align: center;
+    line-height: 80px;
+}
+#span-new{
+    float:left;
+    margin-right: 3px;
+}
+#list-item-quantity *{
+    float:left;
+    text-align: center;
+    line-height: 80px;
+}
+#list-item-quantity input{
+    width:30px;
+    height:30px;
+    margin:22px 0;
+    border:2px solid black;
+}

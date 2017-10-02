@@ -1,0 +1,17 @@
+<div id="list-item-1-container">
+  <div id="list-item-image" class="flex-child">
+     <img src="assets/mava.png" alt="img">
+  </div>
+  <div id="list-item-title" class="flex-child">
+     <span id="span-new"*ngIf="new">NEW</span><div id="name-label"><a href="/product-detail/{{sku}}">{{displayname}}</a></div>
+     <div id="sku-label">{{sku}}</div>
+  </div>
+  <div id="list-item-price" class="flex-child">
+     <div>${{price}}</div>
+  </div>
+  <div id="list-item-quantity" class="flex-child">
+    <span>-</span>
+    <input type="text" placeholder="0">
+    <span>+</span>
+  </div>
+</div>

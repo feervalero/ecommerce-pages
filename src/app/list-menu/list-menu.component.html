@@ -1,10 +1,10 @@
-<h2>
-  {{id}}
-</h2>
-
-
-<div id="grid">
-    <grid-item-1 *ngFor="let item of PartIDs"
+<nav>
+  <label for="swt-view">View: </label>
+  <input type="checkbox" (click) = "switchView(viewType)" name="swt-view">
+</nav>
+<div id="grid" *ngIf="viewType == 1">
+  <grid-item-1  
+    *ngFor="let item of PartIDs"
     [sku]="item.sku" 
     [displayname]="item.displayname" 
     [price]="item.price" 
@@ -12,4 +12,14 @@
     class="grid-1">
   </grid-item-1>
   
+</div>
+<div *ngIf="viewType == 0" id="list">
+  <list-item-1 
+    *ngFor="let item of PartIDs"
+    [sku]="item.sku" 
+    [displayname]="item.displayname" 
+    [price]="item.price" 
+    [new]="1"
+    class="list-item"> 
+</list-item-1>
 </div>

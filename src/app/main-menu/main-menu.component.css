@@ -1,14 +1,29 @@
-#main-menu{
-    float:left;
-    width:20vw;
-    height:30vmax;
-    border:1px solid black;
-    margin:5px;
+#main-menu-container{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
 }
-#container-list-menu{
-    margin-left: 20vw;
-    width:70vw;
-    height:30vmax;
-    margin:5px;
-    border:1px solid black;
+#main-menu-nav{
+    width:240px;
+    padding: 30px;
+    background-color:rgba(11, 58, 247, 0.36);
+}
+#main-menu-content{
+    flex:100%;
+    background-color: rgba(247, 106, 11, 0.66);
+}
+#top-banner{
+    width:100%;
+    background-color: gray;
+    height:100px;
+}
+#menuBar li,#menuBar ul{
+    list-style-type: none;
+}
+#menuBar li:hover,#main-menu-nav a:hover{
+    cursor: pointer;
+}
+ul{
+    padding:0;
 }

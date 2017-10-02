@@ -22,6 +22,16 @@
     <PartID>10049591</PartID>
     <PartID>10049594</PartID>
   </menulist>
+  <menulist id="root">
+    <PartID>10067230</PartID>
+    <PartID>10081718</PartID>
+    <PartID>10081724</PartID>
+    <PartID>10081721</PartID>
+    <PartID>10049513</PartID>
+    <PartID>10049516</PartID>
+    <PartID>10049591</PartID>
+    <PartID>10049594</PartID>
+  </menulist>
   <products>
     <Product id="0943b748-d9bc-4124-908f-239dfff0a06a" name="Very Light" sku="10072818" unitPointValue="26" unitRetailPrice="151.5" startDate="2014-02-10T06:00:00" endDate="2015-01-01T07:59:59.999" scheduleName="Image Updated on 3/5/2014 6:25:09 PM by USA\valerof">
       <Description>Very Light</Description>

@@ -1,24 +1,28 @@
-<header>
-    <div class="flex">
-        <img src="assets/mava.png" width="50px" alt="">
-        <div class="search">
+<div id="app">
+    <header>
+        <div class="flex">
+            <img src="assets/mava.png" width="50px" alt="">
+            <div class="search">
 
-            <input type="text">
-            <span *ngIf="status == true; else statuselse">Hola Fernando</span>
-            <!--or-->
-            <ng-template #statuselse><a href="/login">Login!</a></ng-template>
-            <div id="bag">{{BAG.count}}</div>
+                <input type="text">
+                <span *ngIf="status == true; else statuselse">Hola Fernando</span>
+                <!--or-->
+                <ng-template #statuselse><a href="/login">Login!</a></ng-template>
+                <div id="bag">{{BAG.count}}</div>
+            </div>
         </div>
+        <h1>{{title}}</h1>
+        <a routerLink="/user">users</a>
+        <a routerLink="/catalog-list">catalog-list</a>
+        <a routerLink="/profile">profile</a>
+    </header>
+    <div id="contenido">
+        <router-outlet></router-outlet>
+        <router-outlet name="login"></router-outlet>
     </div>
-    <h1>{{title}}</h1>
-    <a routerLink="/user">users</a>
-    <a routerLink="/catalog-list">catalog-list</a>
-    <a routerLink="/profile">profile</a>
-</header>
-<router-outlet></router-outlet>
-<router-outlet name="login"></router-outlet>
-<footer>
-    <ul>
-        <li *ngFor="let menu of menuActual" (click)="menuAction1(menu)"><a>{{menu.name}}</a></li>
-    </ul>
-</footer>
+    <footer>
+        <ul>
+            <li *ngFor="let menu of menuActual" (click)="menuAction1(menu)"><a>{{menu.name}}</a></li>
+        </ul>
+    </footer>    
+</div>

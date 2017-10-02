@@ -22,6 +22,7 @@ import { ListMenuComponent } from "./list-menu/list-menu.component";
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { GridItem1Component } from './grid-item-1/grid-item-1.component';
 import { LoginComponent } from "./login/login.component";
+import { ListItem1Component } from './list-item-1/list-item-1.component';
 const routes: Routes = [
   {
     path:"", redirectTo:"/catalog-list",pathMatch:"full"
@@ -74,7 +75,8 @@ const routes: Routes = [
     ProductListItemComponent,
     MainComponent,
     MainMenuComponent,
-    GridItem1Component
+    GridItem1Component,
+    ListItem1Component
     
   ],
   imports: [

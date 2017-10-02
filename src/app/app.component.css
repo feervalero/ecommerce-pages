@@ -1,34 +1,34 @@
-*,html,body{
-	margin:0;
-	font-family:Arial;
-	padding:0;
-}
-a{
-	color:blue;
-}
-h1{
-	color:orange;
-}
-header{
-	top:0;
-	left:0;
-	margin:0px;
-	
-	width: 100%;
-	background-color: orangered;
-	color:white;
-}
-router-outlet{
-	margin-top:100px;
-}
-footer{
-	position: fixed;
-	bottom:0;
-	background-color: greenyellow;
-	color:green;
-	width:100%;
-}
-footer ul li{
-	display: inline;
-	list-style:none;
-}
+
+	*,html,body{
+		font-family:Arial;
+	}
+	a{
+		color:blue;
+	}
+	h1{
+		color:orange;
+	}
+	#app{
+		display: flex;
+		flex-direction:column;
+		height: 100vh;
+	}
+	header{
+		width: 100%;
+		display: block;
+		background-color: orangered;
+		color:white;
+	}
+	#contenido{
+		flex:100%;
+		background-color: cyan;
+	}
+	footer{
+
+		bottom:0;
+		background-color: greenyellow;
+		color:green;
+	}
+	footer ul li{
+		
+	}
