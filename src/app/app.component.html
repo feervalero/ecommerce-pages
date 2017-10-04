@@ -7,11 +7,32 @@
                 <input type="text">
                 <span *ngIf="status == true; else statuselse">Hola Fernando</span>
                 <!--or-->
-                <ng-template #statuselse><a href="/login">Login!</a></ng-template>
+                <ng-template #statuselse><button *ngIf="state==='inactive'"(click)="toggleState()">Login!</button></ng-template>
                 <div id="bag">{{BAG.count}}</div>
             </div>
         </div>
         <h1>{{title}}</h1>
+        <div id="loginPanel" [@heroState]="state">
+            <div class="blc">Logged: {{status}}</div>
+            <span class="blc" id="login-panel-logo"><img src="assets/mava.png" width='100px'></span>
+            <input class="blc" type="text" placeholder="username">
+            <input class="blc" type="password" placeholder="password">
+            <button class="blc" >Login</button>
+            <a class="blc" (click)="registerShow()">Register here</a>
+            <div class="blc"><button (click)="toggleState()">Salir</button></div>
+            <div id="register" [@registerState]="register">
+                <input type="text" name="first_name" placeholder="first_name">
+                <input type="text" name="last_name" placeholder="last_name">
+                <input type="text" name="addresses" placeholder="addresses">
+                <input type="text" name="email" placeholder="email">
+                <input type="text" name="phone" placeholder="phone">
+                <input type="text" name="age" placeholder="age">
+                <input type="text" name="genre" placeholder="genre">
+                <button (click)="registerShow()">Cancel</button>
+                <button (click)="saveInformation()">SAVE</button>
+            </div>
+        </div>
+        
         <a routerLink="/user">users</a>
         <a routerLink="/catalog-list">catalog-list</a>
         <a routerLink="/profile">profile</a>

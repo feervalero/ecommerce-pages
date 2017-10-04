@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { RouterModule,Routes } from "@angular/router";
@@ -53,7 +53,7 @@ const routes: Routes = [
     path:"grid-item-1",component:GridItem1Component
   },
   {
-    path:"login",component:LoginComponent,outlet:'login'
+    path:"login",component:LoginComponent
   }
   
 ]
@@ -81,6 +81,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     CookieModule.forRoot(),
     RouterModule.forRoot(routes),
