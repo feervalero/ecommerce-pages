@@ -31,13 +31,14 @@
 	}
 	#loginPanel,#register{
 		position: fixed;
-		top: 0px;left: 0;
+		top: 0;left: 0;
 		width:80vw;
 		height: 80vh;
-		margin:10vw 10vh;
+		margin:10vh 10vw;
 		background-color: rgba(67, 172, 251, 0.76);
 		z-index: 800;
 		text-align: center;
+		overflow-y: auto;
 	}
 	.blc{
 		display: block;
@@ -50,4 +51,9 @@
 		background-color: white;
 		z-index: 900;
 		margin:0;
+	}
+	#register input{
+		display: block;
+		margin:10px 10vw;
+		width:60vw;
 	}

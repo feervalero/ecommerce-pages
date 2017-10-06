@@ -5,7 +5,7 @@
             <div class="search">
 
                 <input type="text">
-                <span *ngIf="status == true; else statuselse">Hola Fernando</span>
+                <span *ngIf="login.status == true; else statuselse">Hola {{new_user.first_name}} {{new_user.last_name}}</span>
                 <!--or-->
                 <ng-template #statuselse><button *ngIf="state==='inactive'"(click)="toggleState()">Login!</button></ng-template>
                 <div id="bag">{{BAG.count}}</div>
@@ -13,21 +13,28 @@
         </div>
         <h1>{{title}}</h1>
         <div id="loginPanel" [@heroState]="state">
-            <div class="blc">Logged: {{status}}</div>
+            <div class="blc">Logged: {{login.status}}</div>
             <span class="blc" id="login-panel-logo"><img src="assets/mava.png" width='100px'></span>
-            <input class="blc" type="text" placeholder="username">
-            <input class="blc" type="password" placeholder="password">
-            <button class="blc" >Login</button>
+            <input class="blc" [(ngModel)]="login.email"type="text" placeholder="email">
+            <input class="blc" [(ngModel)]="login.password"type="password" placeholder="password">
+            <button class="blc" (click)="loginWithEmail()" >Login</button>
             <a class="blc" (click)="registerShow()">Register here</a>
             <div class="blc"><button (click)="toggleState()">Salir</button></div>
             <div id="register" [@registerState]="register">
-                <input type="text" name="first_name" placeholder="first_name">
-                <input type="text" name="last_name" placeholder="last_name">
-                <input type="text" name="addresses" placeholder="addresses">
-                <input type="text" name="email" placeholder="email">
-                <input type="text" name="phone" placeholder="phone">
-                <input type="text" name="age" placeholder="age">
-                <input type="text" name="genre" placeholder="genre">
+                <h1>Enter your information:</h1>
+                <input type="text" [(ngModel)]="new_user.first_name"name="first_name" placeholder="first_name">
+                <input type="text" [(ngModel)]="new_user.middle_name"name="middle_name" placeholder="middle_name">
+                <input type="text" [(ngModel)]="new_user.last_name"name="last_name" placeholder="last_name">
+                <input type="text" [(ngModel)]="new_user.country"name="country" placeholder="Country">
+                <input type="text" [(ngModel)]="new_user.state"name="state" placeholder="State">
+                <input type="text" [(ngModel)]="new_user.city"name="city" placeholder="City">
+                <input type="text" [(ngModel)]="new_user.neigh"name="neigh" placeholder="Neighborhood">
+                <input type="text" [(ngModel)]="new_user.postal_code"name="postal_code" placeholder="Postal Code">
+                <input type="text" [(ngModel)]="new_user.street_number"name="street_number" placeholder="Street and Number">
+                <input type="text" [(ngModel)]="new_user.email"name="email" placeholder="email">
+                <input type="text" [(ngModel)]="new_user.phone"name="phone" placeholder="phone">
+                <input type="text" [(ngModel)]="new_user.age"name="age" placeholder="age">
+                <input type="text" [(ngModel)]="new_user.genre"name="genre" placeholder="genre">
                 <button (click)="registerShow()">Cancel</button>
                 <button (click)="saveInformation()">SAVE</button>
             </div>
