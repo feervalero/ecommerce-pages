@@ -58,7 +58,7 @@ export class AppComponent implements OnInit{
   public register = 'inactive';
   public cart  = "cart";
   constructor(private cookieService:CookieService,private userService:UserService){}
-
+  public a: any;
   ngOnInit(){
     //this.cookieService.putObject("order",this.orderExample);
     //console.log(this.getCookie("order"));
@@ -82,6 +82,12 @@ export class AppComponent implements OnInit{
         genre:''
       }
     }
+    if(this.cookieService.getObject("order")){
+      this.a = this.cookieService.getObject("order");
+      this.BAG.count = this.a.length;
+    }
+
+    
   }
   getCookie(key:string){
     return this.cookieService.getObject(key);

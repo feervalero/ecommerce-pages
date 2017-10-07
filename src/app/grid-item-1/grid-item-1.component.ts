@@ -11,7 +11,7 @@ export class GridItem1Component implements OnInit {
   @Input() sku: any;
   @Input() displayname: string;
   @Input() price: any;
-  
+  @Input() quantity: any;
   constructor() { }
 
   ngOnInit() {

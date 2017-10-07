@@ -1,16 +1,19 @@
 import { Component,SimpleChanges ,OnChanges,Input } from '@angular/core';
 import { MenusService } from "../menus.service";
+import { CookieService } from "ngx-cookie";
 @Component({
   selector: 'list-menu',
   templateUrl: './list-menu.component.html',
-  styleUrls: ['./list-menu.component.css']
+  styleUrls: ['./list-menu.component.css'],
+  providers:[CookieService]
 })
 export class ListMenuComponent implements OnChanges {
   @Input() id:any;
   xml:any;
   PartIDs:any[] = [];
   viewType: any = 1;
-  constructor(private menusService:MenusService) { }
+  private localOrder:any;
+  constructor(private menusService:MenusService, private cs:CookieService) { }
 
   ngOnChanges(changes:SimpleChanges) {
     if(changes.id.currentValue !== undefined){
@@ -22,6 +25,7 @@ export class ListMenuComponent implements OnChanges {
     return x == '1' ? this.viewType = '0' : this.viewType = '1';
   }
   getSubMenu(id: any){
+    
     this.PartIDs = [];
     this.menusService.getMenus().then(data=>{
       var parse = new DOMParser();
@@ -35,15 +39,31 @@ export class ListMenuComponent implements OnChanges {
             for (var k = 0; k < products.length; k++) {
               var product = products[k];
               if(product.attributes['sku'].value.toString()===sku){
-                var item =
-                {img:"45",
-                displayname:product.attributes['name'].value.toString(),
-                sku:product.attributes['sku'].value.toString(),
-                price:product.attributes['unitRetailPrice'].value.toString(),
+                var item: any;
+                item = {
+                  img:"45",
+                  displayname:product.attributes['name'].value.toString(),
+                  sku:product.attributes['sku'].value.toString(),
+                  price:product.attributes['unitRetailPrice'].value.toString(),
+                  quantity:0
                 };
+                if(this.cs.getObject("order")){
+                  this.localOrder = this.cs.getObject("order");
+                  for(let dd of this.localOrder){
+                    if(dd.Sku === product.attributes['sku'].value.toString()){
+                      console.log(dd.Sku);
+                      console.log(product.attributes['sku'].value.toString());
+                      item = {
+                        img:"45",
+                        displayname:product.attributes['name'].value.toString(),
+                        sku:product.attributes['sku'].value.toString(),
+                        price:product.attributes['unitRetailPrice'].value.toString(),
+                        quantity:  dd.Quantity
+                      };
+                    }
+                  }
+                }
 
-                
-                
                 this.PartIDs.push(item);
               }
             }
@@ -54,5 +74,6 @@ export class ListMenuComponent implements OnChanges {
       
     })
   }
+
 
 }

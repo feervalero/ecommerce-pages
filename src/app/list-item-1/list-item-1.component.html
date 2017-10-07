@@ -10,8 +10,8 @@
      <div>${{price}}</div>
   </div>
   <div id="list-item-quantity" class="flex-child">
-    <span>-</span>
-    <input type="text" placeholder="0">
-    <span>+</span>
+    <span (click) = "removeCartOne(sku)">-</span>
+    <input type="text" placeholder="0" [(ngModel)]="quantity">
+    <span (click) = "addCartOne(sku)">+</span>
   </div>
 </div>

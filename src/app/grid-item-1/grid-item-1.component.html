@@ -4,7 +4,7 @@
   <div id="sku-label">{{sku}}</div>
   <div id="name-label">{{displayname}}</div>
   <span>-</span>
-  <input type="text" placeholder="0">
+  <input type="text" placeholder="0" [(ngModel)]="quantity">
   <span>+</span>
   <div>${{price}}</div>
   <button>Add to cart</button>
