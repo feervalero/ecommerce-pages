@@ -8,7 +8,8 @@ export class OrderService {
   private localOrder:any = [];
   constructor(private cs:CookieService) { }
 
-  addOneToCart(item: Item){
+  addOneToCart(item: Item): number{
+    var nv = 0;
     console.log("this will be inserted",item);
     if(this.cs.getObject("order") == undefined)
     {
@@ -23,6 +24,7 @@ export class OrderService {
           encontrado = true;
           //cambia valor de val.Quantity +1
           val.Quantity = val.Quantity+1;
+          nv = val.Quantity;
         }
       }
       if(encontrado == false){
@@ -32,8 +34,10 @@ export class OrderService {
       this.cs.putObject("order",this.localOrder);
     }
     console.log(this.cs.getObject("order"))
+    return nv;
   }
-  removeOneToCart(item: Item){
+  removeOneToCart(item: Item): number{
+    var mg = 0;
     console.log("this will be inserted",item);
     if(this.cs.getObject("order") == undefined)
     {
@@ -49,12 +53,13 @@ export class OrderService {
           //cambia valor de val.Quantity +1
           if(val.Quantity>0){
             val.Quantity = val.Quantity-1;
+            mg = val.Quantity;
           }
         }
       }
       this.cs.remove("order");
       this.cs.putObject("order",this.localOrder);
     }
-    console.log(this.cs.getObject("order"))
+    return mg;
   }
 }

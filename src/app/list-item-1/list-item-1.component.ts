@@ -28,7 +28,7 @@ export class ListItem1Component implements OnInit {
       Quantity:this.quantity,
       ItemDesc:this.displayname
     };
-    this.os.addOneToCart(this.yh);
+    this.quantity = this.os.addOneToCart(this.yh);
   }
   removeCartOne(sku: any){
     this.yh = {
@@ -37,6 +37,6 @@ export class ListItem1Component implements OnInit {
     Quantity:this.quantity,
     ItemDesc:this.displayname
   };
-  this.os.removeOneToCart(this.yh);
+  this.quantity = this.os.removeOneToCart(this.yh);
 }
 }
