@@ -1,0 +1,13 @@
+h1{
+    margin: 15px;
+    text-align: center;
+}
+#container{
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+    height: 80%;
+    background-color: white;
+    border-radius:15px;
+    border:2px solid rgba(255,255,255,.5);
+}

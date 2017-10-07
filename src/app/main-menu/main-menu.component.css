@@ -15,7 +15,9 @@
 }
 #top-banner{
     width:100%;
-    background-color: gray;
+    background: url("http://pipsum.com/1280x200.jpg") no-repeat;
+    background-size:100% auto;
+    background-position-y: center;
     height:100px;
 }
 #menuBar li,#menuBar ul{

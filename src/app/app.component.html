@@ -8,7 +8,10 @@
                 <span *ngIf="login.status == true; else statuselse">Hola {{new_user.first_name}} {{new_user.last_name}}</span>
                 <!--or-->
                 <ng-template #statuselse><button *ngIf="state==='inactive'"(click)="toggleState()">Login!</button></ng-template>
-                <div id="bag">{{BAG.count}}</div>
+                <div id="bag">
+                    <div id="bag-count" [@cartState]="count" (click) =  "rotateBag()">{{BAG.count}}</div>
+                    <div id="bag-logo" [@cartState]="cart" (click) = "rotateBag()"><img src="assets/shopping-bag-flat.png" alt="bag" width="40px"></div>
+                </div>
             </div>
         </div>
         <h1>{{title}}</h1>

@@ -27,6 +27,16 @@ import { User } from "./user";
       })),
       transition('inactive => active', animate('400ms ease-in')),
       transition('active => inactive', animate('400ms ease-out'))
+    ]),
+    trigger('cartState',[
+      state('cart',style({
+        transform:'rotateY(0deg)'
+      })),
+      state('count',style({
+        transform:'rotateY(90deg)',
+      })),
+      transition('cart => count', animate('300ms ease-in')),
+      transition('count => cart', animate('300ms ease-out'))
     ])
   ],
   providers:[UserService]
@@ -46,6 +56,7 @@ export class AppComponent implements OnInit{
   }
   public state = 'inactive';
   public register = 'inactive';
+  public cart  = "cart";
   constructor(private cookieService:CookieService,private userService:UserService){}
 
   ngOnInit(){
@@ -89,6 +100,11 @@ export class AppComponent implements OnInit{
   registerShow(){
     this.register = this.register === 'active' ? 'inactive' : 'active';
   }
+  rotateBag(){
+    this.cart = this.cart === 'cart' ? 'count' : 'cart';
+    console.log("cart",this.cart);
+  }
+
   saveInformation(){
     if(this.new_user.email!=''){
       this.userService.searchByEmail(this.new_user.email).then(x =>{
