@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie';
-import { Order } from "./order";
 import { Item } from "./item";
+import { Headers, Http } from "@angular/http";
+import 'rxjs/add/operator/toPromise';
+import { HttpParams } from "@angular/common/http";
 @Injectable()
 export class OrderService {
-
+  user: any;
   private localOrder:any = [];
-  constructor(private cs:CookieService) { }
+  constructor(private cs:CookieService,private http:Http) { }
 
   addOneToCart(item: Item): number{
     var nv = 0;
@@ -61,5 +63,45 @@ export class OrderService {
       this.cs.putObject("order",this.localOrder);
     }
     return mg;
+  }
+  getOrderFromCookie():any{
+    
+    return this.cs.getObject("order");
+  }
+  getUserIDFromCookie():any{
+    
+    if(this.cs.getObject("user")){
+      this.user = this.cs.getObject("user");
+      return this.user["_id"];
+    }else{
+      return null;
+    }
+  }
+  
+  getOrderFromStage(userid: any,stage: any){
+    return this.http.get("http://localhost:3000/api/orders/"+userid+"/"+stage)
+    .toPromise()
+    .then(r=>JSON.parse(r["_body"])[0])
+    .catch(this.ErrorHandler);
+    
+  }
+  deleteOrder(userid: any,stage: any){
+    return this.http.delete("http://localhost:3000/api/orders/"+userid+"/"+stage)
+    .toPromise()
+    .then(r=>JSON.parse(r["_body"])[0])
+    .catch(this.ErrorHandler);
+  }
+  saveOrderFromCookieToStage(cookieOrder: any){
+    console.log("cookieORder",cookieOrder);
+    return this.http.post("http://localhost:3000/api/orders/",cookieOrder,{
+      params: new HttpParams().set("Content-Type","application/x-www-form-urlencoded")
+    })
+    .toPromise()
+    .then(r=>JSON.parse(r["_body"]))
+    .catch(this.ErrorHandler);
+  }
+  ErrorHandler(error: any):Promise<any>{
+    console.log("Error has occurred",error);
+    return Promise.reject(error.message);
   }
 }

@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { OrderService } from "../order.service";
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.css']
+  styleUrls: ['./cart.component.css'],
+  providers:[OrderService]
+  
 })
 export class CartComponent implements OnInit {
   order: any = {
@@ -48,10 +51,41 @@ export class CartComponent implements OnInit {
     }
   
   };
-  constructor() { }
+  userid: any;
+  currentOrder: any;
+  constructor(private os:OrderService) { }
 
   ngOnInit() {
-
+    this.fromCookieToDB();
   }
 
+  fromCookieToDB(){
+    //revisa cookie
+      //si hay
+        //borra cookie en db si hay
+        //insert cookie en db
+        //muestra en UI
+      //si no hay
+        // do nothing
+
+    if(this.os.getOrderFromCookie()){
+      this.currentOrder = this.os.getOrderFromCookie();
+      this.userid = this.os.getUserIDFromCookie();
+      if(this.currentOrder){
+        console.log(this.currentOrder);
+        this.os.deleteOrder(this.userid,"10");
+        var stageOrder = {
+          contactid:this.userid,
+          items:this.currentOrder,
+          stage:"10"
+        };
+        this.os.saveOrderFromCookieToStage(stageOrder).then(x=>{
+          
+        });
+
+      }
+      
+    }
+  }
+  
 }

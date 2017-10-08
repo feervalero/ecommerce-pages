@@ -1,4 +1,4 @@
-<table>
+<!--<table>
 <tr>  
     <th></th>
     <th>Item</th>
@@ -15,3 +15,5 @@
       >
 </product-list-item>
 </table>
+-->
+<li *ngFor="let items of currentOrder.items">{{items.sku}}</li>
