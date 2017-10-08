@@ -3,9 +3,11 @@
   <img src="assets/mava.png" alt="img" width="80%">
   <div id="sku-label">{{sku}}</div>
   <div id="name-label">{{displayname}}</div>
-  <span (click) = "removeCartOne(sku)">-</span>
-  <input type="text" placeholder="0" [(ngModel)]="quantity">
-  <span (click) = "addCartOne(sku)">+</span>
-  <div>${{price}}</div>
-  <button>Add to cart</button>
+  
+  <div id="grid-item-quantity" class="flex-container">
+      <span (click) = "removeCartOne(sku)">-</span>
+      <input type="text" placeholder="0" [(ngModel)]="quantity" class="flex-child">
+      <span (click) = "addCartOne(sku)">+</span>
+  </div>
+  <button id="addbutton" (click) = "addCartOne(sku)" >Add to cart</button>
 </div>

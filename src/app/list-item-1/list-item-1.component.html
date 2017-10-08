@@ -9,9 +9,9 @@
   <div id="list-item-price" class="flex-child">
      <div>${{price}}</div>
   </div>
-  <div id="list-item-quantity" class="flex-child">
-    <span (click) = "removeCartOne(sku)">-</span>
-    <input type="text" placeholder="0" [(ngModel)]="quantity">
-    <span (click) = "addCartOne(sku)">+</span>
+  <div id="grid-item-quantity" class="flex-container">
+      <span (click) = "removeCartOne(sku)">-</span>
+      <input type="text" placeholder="0" [(ngModel)]="quantity" class="flex-child">
+      <span (click) = "addCartOne(sku)">+</span>
   </div>
 </div>

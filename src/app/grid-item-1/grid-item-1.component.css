@@ -3,3 +3,12 @@
     padding:10%;
     position: relative;
 }
+
+#addbutton{
+    width: 100%;
+    margin:10px auto;
+}
+#addbutton:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
