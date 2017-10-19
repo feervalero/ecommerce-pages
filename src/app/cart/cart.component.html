@@ -1,19 +1,21 @@
-<!--<table>
+<table>
 <tr>  
-    <th></th>
     <th>Item</th>
     <th>Name</th>
     <th>Price</th>
-    <th>Inventory</th>
-  </tr>
-  <product-list-item *ngFor="let item of order.products" 
-      [price]="item.price"
-      [sku]="item.sku"
-      [displayname]="item.name"
-      [img]="item.image"
-      [quantity]="item.quantity"
-      >
-</product-list-item>
+    <th>Quantity</th>
+</tr>
+<tr *ngFor="let item of currentOrder">
+    <td>{{item.Sku}}</td>
+    <td>{{item.ItemDesc}}</td>
+    <td>{{item.Price}}</td>
+    <td>
+        <i class="material-icons">remove</i>
+        <span>{{item.Quantity}}</span>
+        <i class="material-icons">add</i>
+    </td>
+    <td><i class="material-icons">delete</i></td>
+</tr>
 </table>
--->
-<li *ngFor="let items of currentOrder.items">{{items.sku}}</li>
+
+<!--<li *ngFor="let items of currentOrder">{{items.Sku}}</li>-->

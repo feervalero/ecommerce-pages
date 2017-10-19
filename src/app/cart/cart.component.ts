@@ -71,7 +71,8 @@ export class CartComponent implements OnInit {
     if(this.os.getOrderFromCookie()){
       this.currentOrder = this.os.getOrderFromCookie();
       this.userid = this.os.getUserIDFromCookie();
-      if(this.currentOrder){
+      console.log(this.userid);
+      if(this.currentOrder && this.userid){
         console.log(this.currentOrder);
         this.os.deleteOrder(this.userid,"10");
         var stageOrder = {

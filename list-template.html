@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style rel="stylesheet/css">          
+            @font-face {
+                font-family: 'Material Icons';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Material Icons'),
+                local('MaterialIcons-Regular')
+            }
+            .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+            
+                /* Support for all WebKit browsers. */
+                -webkit-font-smoothing: antialiased;
+                /* Support for Safari and Chrome. */
+                text-rendering: optimizeLegibility;
+            
+                /* Support for Firefox. */
+                -moz-osx-font-smoothing: grayscale;
+            
+                /* Support for IE. */
+                font-feature-settings: 'liga';
+            }
+            i:hover{
+                cursor: pointer;
+            }
+            .avatar img{
+                border-radius:500px;
+                border:2px solid black;
+            }
+            .flex-container{
+                display: flex;
+                flex-direction:row;
+                height: 100px;
+            }
+            .flex{
+                flex:100%;
+            }
+            .title{
+                line-height: 100px;
+                overflow-y: scroll;
+            }
+            .flex-container tr{
+                border:1px solid black;
+            }
+            input{
+                width:50px;
+                height:50px;
+            }
+        </style>
+    </head>
+    <body style="background-color:#03A9F4">
+        <div><span>mi</span><strong>Lista</strong></div>
+        <hr>
+        <table>
+            <tr class="flex-container">
+                <td class="avatar"><img src="src/assets/dummy.png" width="20%" alt=""></td>
+                <td class="price">$100.00</td>
+                <td class="flex">
+                    <span>Quinteto de Sombras para Ojos Mary Kay® Simply Smoky 3g</span>
+                    <span>10088937</span>
+                </td>
+                <td class="quantity">
+                    <i class="material-icons">add</i>
+                    <input type="text">
+                    <i class="material-icons">remove</i>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

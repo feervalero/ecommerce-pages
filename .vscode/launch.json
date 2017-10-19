@@ -1,18 +1,27 @@
 {
         "version": "0.2.0",
         "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome",
+            "url": "http://localhost:4200/catalog-list",
+            "webRoot": "${workspaceRoot}"
+        },
             {
-                "type": "extensionHost",
+                "type": "chrome",
+                "request": "attach",
+                "name": "Attach to Chrome",
+                "port": 4200,
+                "webRoot": "${workspaceRoot}"
+            },
+            {
+                "name": "Launch localhost with sourcemaps",
+                "type": "chrome",
                 "request": "launch",
-                "name": "Launch Extension",
-                "runtimeExecutable": "${execPath}",
-                "args": [
-                    "--extensionDevelopmentPath=${workspaceRoot}"
-                ],
-                "outFiles": [
-                    "${workspaceRoot}/out/**/*.js"
-                ],
-                "preLaunchTask": "npm"
+                "url": "http://localhost:4200/",
+                "sourceMaps": true,
+                "webRoot": "${workspaceRoot}"
             },
             {
                 "type": "node",

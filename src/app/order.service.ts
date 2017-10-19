@@ -92,7 +92,6 @@ export class OrderService {
     .catch(this.ErrorHandler);
   }
   saveOrderFromCookieToStage(cookieOrder: any){
-    console.log("cookieORder",cookieOrder);
     return this.http.post("http://localhost:3000/api/orders/",cookieOrder,{
       params: new HttpParams().set("Content-Type","application/x-www-form-urlencoded")
     })

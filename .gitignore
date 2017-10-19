@@ -41,3 +41,7 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
+# catalog images
+src/assets/Colorchip/*
+src/assets/Hero/*
+src/assets/Thumbnail/*
