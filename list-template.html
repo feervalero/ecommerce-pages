@@ -2,7 +2,13 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <style rel="stylesheet/css">          
+        <style rel="stylesheet/css">   
+            *{
+                margin:0px;
+                padding:0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 3vw;
+            }       
             @font-face {
                 font-family: 'Material Icons';
                 font-style: normal;
@@ -36,9 +42,20 @@
             i:hover{
                 cursor: pointer;
             }
+            .avatar{
+                width: 20vw;
+                background: red;
+                
+                line-height: 100px;
+            }
             .avatar img{
-                border-radius:500px;
-                border:2px solid black;
+                width:20vw;
+                height:20vw;
+            }
+            .price,.quantity{
+                width:15vw;
+                text-align: center;
+                line-height: 100px;
             }
             .flex-container{
                 display: flex;
@@ -46,18 +63,32 @@
                 height: 100px;
             }
             .flex{
-                flex:100%;
-            }
-            .title{
-                line-height: 100px;
-                overflow-y: scroll;
+                width:40vw;
             }
             .flex-container tr{
                 border:1px solid black;
             }
-            input{
-                width:50px;
-                height:50px;
+            .quantity{
+                display: flex;
+                flex-direction: row;
+            }
+            .flex{
+                display:flex;
+                flex-direction: column;
+                vertical-align: center;
+            }
+            .quantity{
+                width:25vw;
+                background-color: green;
+            }
+            .quantity i{
+                width:5vw;
+                min-width: 24px;
+                line-height: 100px;
+            }
+            .quantity input{
+                width:15vw;
+                
             }
         </style>
     </head>
@@ -66,7 +97,20 @@
         <hr>
         <table>
             <tr class="flex-container">
-                <td class="avatar"><img src="src/assets/dummy.png" width="20%" alt=""></td>
+                <td class="avatar"><img src="src/assets/dummy.png" alt=""></td>
+                <td class="price">$100.00</td>
+                <td class="flex">
+                    <span>Quinteto de Sombras para Ojos Mary Kay® Simply Smoky 3g</span>
+                    <span>10088937</span>
+                </td>
+                <td class="quantity">
+                    <i class="material-icons">add</i>
+                    <input type="text">
+                    <i class="material-icons">remove</i>
+                </td>
+            </tr>
+            <tr class="flex-container">
+                <td class="avatar"><img src="src/assets/dummy.png" alt=""></td>
                 <td class="price">$100.00</td>
                 <td class="flex">
                     <span>Quinteto de Sombras para Ojos Mary Kay® Simply Smoky 3g</span>

@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style rel="stylesheet/css">   
+            *{
+                margin:0px;
+                padding:0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 4vw;
+            }       
+            @font-face {
+                font-family: 'Material Icons';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Material Icons'),
+                local('MaterialIcons-Regular')
+            }
+            .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+            
+                /* Support for all WebKit browsers. */
+                -webkit-font-smoothing: antialiased;
+                /* Support for Safari and Chrome. */
+                text-rendering: optimizeLegibility;
+            
+                /* Support for Firefox. */
+                -moz-osx-font-smoothing: grayscale;
+            
+                /* Support for IE. */
+                font-feature-settings: 'liga';
+            }
+            i:hover{
+                cursor: pointer;
+            }
+            header{
+                background-color: whitesmoke;
+                width: 100vw;
+                height: 70vh;
+                display: flex;
+                flex-direction: column;
+            }
+            footer{
+                background-color:tomato;
+                width: 100vw;
+                height: 30vh;
+            }
+            #slider{
+                background: url("F_Purse1_drop.jpg") no-repeat;
+                background-position-x: center;
+                background-size: auto 100%;
+                width: 100vw;
+                flex:100%;
+            }
+            #actions{
+                height:10vh;
+                width: 100vw;
+                text-align: center
+            }
+            .float-left{
+                line-height: 10vh;
+                color:#888;
+                position:absolute;
+                left:2vw;
+            }
+            .float-right{
+                color:#888;
+                position: absolute;
+                right:2vw;
+                line-height: 10vh;
+            }
+            .price{
+                font-size: 7vw;
+                margin-top: 63px;
+                font-weight: bold;
+                position: relative;
+                top: 2vh;
+            }
+            #buy-button{
+                width: 100vw;
+                height:50px;
+                margin:4vh 0;
+            }
+            button{
+                width:70vw;
+                margin:5px 15vw;
+                height:30px;
+                background-color: #666;
+                color:white;
+                bordeR:none;
+                font-weight: 500;
+                font-size: 5vw;
+            }
+            #h-1{
+                margin:3vh 10vw;
+                width:80vw;
+                font-size: 6vw;
+                font-weight: 500;
+                text-align: center;
+            }
+            .material-icons.md-18 { font-size: 4vw; }
+            .material-icons.md-10 { font-size: 10vw; }
+            #slider .left{
+                position: absolute;
+                left:5vw;
+                color:tomato;
+            }
+            #slider .right{
+                position: absolute;
+                right:5vw;
+                color:forestgreen;
+            }
+            footer div{
+                text-align: center;
+                color:white;
+                padding: 4vh;
+            }
+            #count-likes{
+                font-weight: bold;
+            }
+            footer a{
+                position: absolute;
+                width: 94vw;
+                bottom: 0;
+                margin-left: 2vw;
+                text-align: center;
+                padding: 2vh 1vw;
+                text-decoration: none;
+                color: white;
+                border-top: 1px solid rgba(255,255,255,.5);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="h-1">
+                Bolsa de mano para dama Michael Kors
+            </div>
+            <div id="slider">
+                <span class="left"><i class="material-icons md-10">favorite</i></span>
+                <span class="right"><i class="material-icons md-10">check_circle</i></span>
+            </div>
+            <div id="actions">
+                <span class="float-left"><i class="material-icons md-18">favorite</i> 99 Likes</span>
+                <span class="price">$3,500.00</span>
+                <span class="float-right"><i class="material-icons md-18">chat_bubble</i> 99 Comments</span>
+            </div>
+            <div id="buy-button">
+                <button>Buy now</button>
+            </div>
+        </header>
+        <footer>
+            <div>
+                <span id="count-likes">674</span>
+                <span id="tag">PEOPLE LIKES THIS</span>
+            </div>
+            <a href="#">@feervalero</a>
+        </footer>
+    </body>
+</html>
