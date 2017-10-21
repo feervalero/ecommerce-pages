@@ -9,7 +9,23 @@
     	<menuItem id="CalzadoMujer1" displayName ="Sandalias" parent="CalzadoMujer" />
     	<menuItem id="CalzadoMujer2" displayName ="Zapatillas" parent="CalzadoMujer" />
     </menuItem> 
-  </menuItem> 
+  </menuItem>
+  <menuItem parent="root" id="NL" displayName="Nicole Lee">
+	<menuItem parent="NL" displayName="BOLSAS CHICAS" id="BOLSAS-CHICAS">
+		<menuItem parent="BOLSAS-CHICAS" displayName="WREN" id="PRT12206"/>
+		<menuItem parent="BOLSAS-CHICAS" displayName="CASEY" id="BOX12210"/>
+	</menuItem>
+	<menuItem parent="NL" displayName="MOCHILAS" id="MOCHILAS">
+		<menuItem parent="MOCHILAS" displayName="CONVENTINA" id="P12359"/>
+		<menuItem parent="MOCHILAS" displayName="ADEEN" id="LUN12207"/>
+	</menuItem>
+</menuItem>
+  <menulist id="NL">
+    <PartID>PRT122061</PartID>
+    <PartID>BOX122101</PartID>
+    <PartID>P123591</PartID>
+    <PartID>LUN122071</PartID>
+  </menulist>
   <menulist id="ROPA">
     <PartID>10067230</PartID>
     <PartID>10081718</PartID>
@@ -33,6 +49,18 @@
     <PartID>10049594</PartID>
   </menulist>
   <products>
+    <Product sku="PRT122061" unitRetailPrice="100" name="BOLSA TIPO SOMBRERO ESTAMPADA-LILY LOVES TO SHAKE" />
+    <Product sku="PRT122062" unitRetailPrice="100" name="BOLSA TIPO SOMBRERO ESTAMPADA-NEW YORK WITH A STYLE" />
+    <Product sku="PRT122063" unitRetailPrice="100" name="BOLSA TIPO SOMBRERO ESTAMPADA-RACING GIRL" />
+    <Product sku="BOX122101" unitRetailPrice="100" name="BOLSA RIGIDA CUADRADA ESTAMPADA-CLARA LOVES PHOTO" />
+    <Product sku="BOX122102" unitRetailPrice="100" name="BOLSA RIGIDA CUADRADA ESTAMPADA-HOLLIWOOD STAR" />
+    <Product sku="BOX122103" unitRetailPrice="100" name="BOLSA RIGIDA CUADRADA ESTAMPADA-LILY LOVES TO SHAKE" />
+    <Product sku="P123591" unitRetailPrice="100" name="BOLSA KISSLOCK CON APLICACIONES-BLACK" />
+    <Product sku="P123592" unitRetailPrice="100" name="BOLSA KISSLOCK CON APLICACIONES-OLIVE" />
+    <Product sku="P123593" unitRetailPrice="100" name="BOLSA KISSLOCK CON APLICACIONES-RED" />
+    <Product sku="LUN122071" unitRetailPrice="100" name="LONCHERA-TIPO BACKPACK-BIKE TOUR" />
+    <Product sku="LUN122072" unitRetailPrice="100" name="LONCHERA-TIPO BACKPACK-BLACK" />
+    <Product sku="LUN122073" unitRetailPrice="100" name="LONCHERA-TIPO BACKPACK-CLARA LOVES PHOTO" />
     <Product id="0943b748-d9bc-4124-908f-239dfff0a06a" name="Very Light" sku="10072818" unitPointValue="26" unitRetailPrice="151.5" startDate="2014-02-10T06:00:00" endDate="2015-01-01T07:59:59.999" scheduleName="Image Updated on 3/5/2014 6:25:09 PM by USA\valerof">
       <Description>Very Light</Description>
     </Product>
@@ -187,7 +215,7 @@
     </Product>
     <Product id="40c504b8-1401-4fe3-9de0-9eb94277fb23" name="Warm Amber® 50 mL" sku="10020028" unitPointValue="38" unitRetailPrice="228.5" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:57 PM by USA\valerof">
     </Product>
-    <Product id="48da57e1-765a-4a23-9a1d-ffcb529fae12" name="Belara Midnight® 50 mL" sku="10067230" unitPointValue="58" unitRetailPrice="347" startDate="2014-02-10T06:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="MarchPackage2015 on 20/02/2015 11:24:51 a.m.">
+    <Product id="48da57e1-765a-4a23-9a1d-ffcb529fae12" name="Belara Midnight® 50 mL" sku="10067230" unitPointValue="58" unitRetailPrice="300" startDate="2014-02-10T06:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="MarchPackage2015 on 20/02/2015 11:24:51 a.m.">
       <Description>Belara Midnight® Eau de Parfum 50 mL</Description>
     </Product>
     <Product id="1da6125a-d9bb-490c-bcb3-710170915579" name="Belara® 50 mL" sku="10192900" unitPointValue="58" unitRetailPrice="347" startDate="2014-02-19T07:00:00" endDate="2014-05-01T06:59:59.999" scheduleName="Image Updated on 6/24/2014 4:01:57 PM by USA\valerof">

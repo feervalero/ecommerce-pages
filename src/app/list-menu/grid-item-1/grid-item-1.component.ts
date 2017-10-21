@@ -1,6 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
-import { OrderService } from "../order.service";
-import { Item } from "../item";
+import { OrderService } from "../../order.service";
+import { Item } from "../../item";
 @Component({
   selector: 'grid-item-1',
   templateUrl: './grid-item-1.component.html',

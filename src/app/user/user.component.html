@@ -1,6 +1,0 @@
-<div class="content">
-  <div *ngFor="let user of users" [class.selected] = "user===selectedUser" (click)="select(user)">
-    id: <span>{{user.contact}}</span>
-    <p>{{user.first_name}}</p>
-  </div>
-</div>

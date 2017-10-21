@@ -1,0 +1,23 @@
+<table>
+<tr>  
+    <th>Item</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+</tr>
+<tr *ngFor="let item of currentOrder">
+    <div *ngIf="item.Quantity !== 0">
+        <td>{{item.Sku}}</td>
+        <td>{{item.ItemDesc}}</td>
+        <td>{{item.Price}}</td>
+        <td>
+            <i class="material-icons">remove</i>
+            <span>{{item.Quantity}}</span>
+            <i class="material-icons">add</i>
+        </td>
+        <td><i class="material-icons">delete</i></td>
+    </div>
+</tr>
+</table>
+
+<!--<li *ngFor="let items of currentOrder">{{items.Sku}}</li>-->

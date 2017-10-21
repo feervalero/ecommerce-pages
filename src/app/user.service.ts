@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { UserClass } from "./user-class/user-class.component";
-import { USERS } from "./USERS/users";
 import { Headers,Http } from "@angular/http";
 import { HttpParams } from "@angular/common/http";
 import 'rxjs/add/operator/toPromise';
@@ -10,9 +9,6 @@ export class UserService {
   private headers = new Headers({'Content-Type': 'application/json','Access-Control-Origin':'http://localhost:4200/'});
   constructor(private http:Http){}
 
-  getUsers(): Promise<UserClass[]>{
-    return Promise.resolve(USERS)
-   }
   getOrdersByProfile(id: string): Promise<any>{
     return this.http.get("http://localhost:3000/api/orders/"+id)
                   .toPromise()

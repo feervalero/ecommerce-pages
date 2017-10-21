@@ -3,8 +3,6 @@
         <div class="flex">
             <img src="assets/mava.png" width="50px" alt="">
             <div class="search">
-
-                <input type="text">
                 <span *ngIf="login.status == true; else statuselse">Hola {{new_user.first_name}} {{new_user.last_name}}</span>
                 <!--or-->
                 <ng-template #statuselse><button *ngIf="state==='inactive'"(click)="toggleState()">Login!</button></ng-template>
@@ -14,7 +12,6 @@
                 </div>
             </div>
         </div>
-        <h1>{{title}}</h1>
         <div id="loginPanel" [@heroState]="state">
             <div class="blc">Logged: {{login.status}}</div>
             <span class="blc" id="login-panel-logo"><img src="assets/mava.png" width='100px'></span>
@@ -43,10 +40,9 @@
             </div>
         </div>
         
-        <a routerLink="/user">users</a>
-        <a routerLink="/catalog-list">catalog-list</a>
-        <a routerLink="/profile">profile</a>
+        <a routerLink="/catalog-list">home</a>
         <a routerLink="/checkout/cart">Checkout</a>
+        <a *ngIf="login.status == true;" routerLink="/user">User</a>
     </header>
     <div id="contenido">
         <router-outlet></router-outlet>

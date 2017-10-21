@@ -51,8 +51,6 @@ export class ListMenuComponent implements OnChanges {
                   this.localOrder = this.cs.getObject("order");
                   for(let dd of this.localOrder){
                     if(dd.Sku === product.attributes['sku'].value.toString()){
-                      console.log(dd.Sku);
-                      console.log(product.attributes['sku'].value.toString());
                       item = {
                         img:"45",
                         displayname:product.attributes['name'].value.toString(),

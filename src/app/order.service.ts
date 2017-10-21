@@ -11,7 +11,8 @@ export class OrderService {
   constructor(private cs:CookieService,private http:Http) { }
 
   addOneToCart(item: Item): number{
-    var nv = 0;
+    item.Quantity = 1;
+    var nv = 1;
     console.log("this will be inserted",item);
     if(this.cs.getObject("order") == undefined)
     {
@@ -21,6 +22,7 @@ export class OrderService {
     }else{
       var encontrado = false;
       this.localOrder =this.cs.getObject("order");
+      console.log(this.localOrder);
       for(let val of this.localOrder){
         if(val.Sku == item.Sku){
           encontrado = true;
@@ -35,7 +37,7 @@ export class OrderService {
       this.cs.remove("order");
       this.cs.putObject("order",this.localOrder);
     }
-    console.log(this.cs.getObject("order"))
+    console.log(item)
     return nv;
   }
   removeOneToCart(item: Item): number{
