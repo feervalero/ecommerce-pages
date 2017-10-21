@@ -109,13 +109,62 @@
                 width: auto;
                 height: auto;
             }
+            #drawer{
+                position: fixed;
+                top:0;
+                left:-75vw;
+                width:75vw;
+                height:100vh;
+                background-color: whitesmoke;
+                z-index: 99;
+            }
+            #drawer-shadow{
+                position: fixed;
+                top:0;
+                width:75vw;
+                height:100vh;
+                background-color: rgba(0,0,0,.6);
+                z-index:80;
+                opacity: 0;
+                right:100vw;
+            }
+            @keyframes drawerOpen {
+                from {transform:translateX(0)}
+                to {transform:translateX(75vw)}
+            }
+            .drawer-open{
+                animation-name: drawerOpen;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+            }
+            @keyframes shadowOpen {
+                0% {
+                    right:-75vw;
+                    opacity: 0;
+                }
+                1%{
+                    right:0;
+                    opacity: 0;
+                }
+                100% {
+                    right:0;
+                    opacity: 1;
+                }
+            }
+            .shadow-open{
+                animation-name: shadowOpen;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+            }
         </style>
     </head>
     <body style="background-color:whitesmoke">
         <header>
-            <i class="material-icons">menu</i>
+            <i class="material-icons" onclick="drawer_open()">menu</i>
             <h1>my E-Commerce</h1>
-            <i class="material-icons icon-blue">shopping_cart</i>
+            <i class="material-icons icon-blue" onclick="cart_open()">shopping_cart</i>
         </header>
         <div id="content">
             <div class="item-100">
@@ -149,5 +198,32 @@
         <footer>
             <h1>Login</h1>
         </footer>
+        <div id="drawer">
+            d
+        </div>
+        <div id="drawer-shadow" onclick="close_all()">
+            
+        </div>
     </body>
+    <script>
+        function drawer_open(){
+            var d = document.getElementById("drawer");
+            d.className += " drawer-open";
+
+            var d = document.getElementById("drawer-shadow");
+            d.className += " shadow-open";
+            
+        }
+        function cart_open(){
+            console.log("cart open");
+        }
+        function close_all(){
+            var d = document.getElementById("drawer");
+            d.className -= " drawer-open";
+
+            var d = document.getElementById("drawer-shadow");
+            d.className -= " shadow-open";
+            
+        }
+    </script>
 </html>
