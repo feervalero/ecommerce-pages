@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style rel="stylesheet/css">   
+            *{
+                margin:0px;
+                padding:0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 4vw;
+            }       
+            @font-face {
+                font-family: 'Material Icons';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Material Icons'),
+                local('MaterialIcons-Regular')
+            }
+            .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+            
+                /* Support for all WebKit browsers. */
+                -webkit-font-smoothing: antialiased;
+                /* Support for Safari and Chrome. */
+                text-rendering: optimizeLegibility;
+            
+                /* Support for Firefox. */
+                -moz-osx-font-smoothing: grayscale;
+            
+                /* Support for IE. */
+                font-feature-settings: 'liga';
+            }
+            i:hover{
+                cursor: pointer;
+            }
+            header{
+                background-color:#3C3741;
+                width:100vw;
+                height:50px;
+                position: fixed;
+                top:0;
+                color:whitesmoke;
+                display: flex;
+                flex-direction: row;
+            }
+            header i{
+                margin:12px;
+            }
+            header h1,footer h1{
+                flex:100%;
+                line-height: 50px;
+                text-align: center;
+
+            }
+            #content{
+                flex:100%;
+                width:100vw;
+                background-color:whitesmoke;
+                margin:50px 0;
+            }
+            footer{
+                background-color:#F04903;
+                position:fixed;
+                bottom:0;
+                width:100vw;
+                height:50px;
+                color:whitesmoke;
+            }
+            body{
+                height:100vh;
+                display:flex;
+                flex-direction:column;
+            } 
+            .material-icons.md-50 { font-size: 50px; }
+            .icon-blue{
+                color:dodgerblue;
+            }
+            .item-100{
+                width:100vw;
+                
+                background-color: #ccc;
+            }
+            .item-50{
+                width:50vw;
+                height:50vw;
+                background-color: #ccc;
+                float:left;
+            }
+            .item-100 img{
+                display: block;
+                max-width:100vw;
+                max-height:auto;
+                width: auto;
+                height: auto;
+            }
+            .item-50 img{
+                display: block;
+                max-width:50vw;
+                max-height:auto;
+                width: auto;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body style="background-color:whitesmoke">
+        <header>
+            <i class="material-icons">menu</i>
+            <h1>my E-Commerce</h1>
+            <i class="material-icons icon-blue">shopping_cart</i>
+        </header>
+        <div id="content">
+            <div class="item-100">
+                <img src="nl-1.jpg" alt="">
+            </div>
+            <div class="item-50">
+                <img src="bolsas-chicas.jpg" alt="">
+            </div>
+            <div class="item-50">
+                <img src="mochilas.png" alt="">
+            </div>
+            <div class="item-100">
+                <img src="full.jpg" alt="">
+            </div>    
+            <div class="item-50">
+                <img src="square-1.jpg" alt="">
+            </div>
+            <div class="item-50">
+                <img src="square-2.jpg" alt="">
+            </div>
+            <div class="item-100">
+                <img src="full-1.jpg" alt="">
+            </div>
+            <div class="item-50">
+                <img src="carteras.jpg" alt="">
+            </div>
+            <div class="item-50">
+                <img src="panaleras.png" alt="">
+            </div>
+        </div>
+        <footer>
+            <h1>Login</h1>
+        </footer>
+    </body>
+</html>
