@@ -1,31 +1,71 @@
 #main-menu-container{
     display: flex;
     flex-direction: row;
-    width:100%;
-    height:100%;
+    width:100vw;
 }
 #main-menu-nav{
-    width:240px;
-    padding: 30px;
-    background-color:rgba(11, 58, 247, 0.36);
+    width: 100vw;
+    position: fixed;
+    left: -100vw;
+    background-color: whitesmoke;
+    height: 85vh;
+    height: calc(100vh - 100px);
+    z-index: 80;
 }
-#main-menu-content{
-    flex:100%;
-    background-color: rgba(247, 106, 11, 0.66);
+#main-menu-nav li{
+    list-style: none;
 }
-#top-banner{
-    width:100%;
-    background: url("http://pipsum.com/1280x200.jpg") no-repeat;
-    background-size:100% auto;
-    background-position-y: center;
-    height:100px;
-}
-#menuBar li,#menuBar ul{
-    list-style-type: none;
-}
-#menuBar li:hover,#main-menu-nav a:hover{
-    cursor: pointer;
-}
+
 ul{
     padding:0;
+}
+@keyframes showNav{
+    0%{left:-100vw}
+    100%{left:0vw}
+}
+.show-nav{
+    animation-name: showNav;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+@keyframes hideNav{
+    0%{left:0}
+    100%{left:-100vw}
+}
+.hide-nav{
+    animation-name: hideNav;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+#container button{
+    width: 50vw;
+    height: 40px;
+    text-decoration: none;
+    border: 0;
+    background-color: tomato;
+    border-radius: 2vw;
+    font-size: 4vw;
+    margin: 1vh 7px;
+    position: absolute;
+    right: 0;
+    color:whitesmoke;
+}
+#menuBar li{
+    list-style: none;
+    margin:15px auto;
+    height:50px;
+    line-height: 50px;
+    text-indent: 5vw;
+    border-top:1px dotted #777;
+    border-bottom:1px dotted #777;
+}
+#menuBar li i{
+    right:2vw;
+    position: absolute;
+    margin:12px;
+}
+#back i{
+    margin:12px;
 }

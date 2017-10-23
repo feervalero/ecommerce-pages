@@ -18,6 +18,17 @@ export class MainMenuComponent implements OnInit {
   ngOnInit() {
     this.getMenus();
   }
+  showNav(){
+    var d = document.getElementById("main-menu-nav");
+    d.style.zIndex="99";
+    d.className="show-nav";
+    
+  }
+  closeNav(){
+    var d = document.getElementById("main-menu-nav");
+    d.className="hide-nav";
+    
+  }
   getMenus(){
     this.menuService.getMenus().then(xml=>{
       var parser = new DOMParser();

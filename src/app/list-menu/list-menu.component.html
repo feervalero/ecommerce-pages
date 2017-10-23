@@ -1,8 +1,12 @@
 <nav>
-  <label for="swt-view">View: </label>
-  <input type="checkbox" (click) = "switchView(viewType)" name="swt-view">
+  <i class="material-icons view_list">view_list</i>
+  <span class="flag-switch" >
+    <input type="checkbox" id="check1" (click) = "switchView(viewType)" checked>
+      <label for="check1"></label>
+  </span>
+  <i class="material-icons grid_on">grid_on</i>
 </nav>
-<div id="grid" *ngIf="viewType == 1">
+<div id="grid" *ngIf="viewType == 0">
   <grid-item-1  
     *ngFor="let item of PartIDs"
     [sku]="item.sku" 
@@ -14,7 +18,7 @@
   </grid-item-1>
   
 </div>
-<div *ngIf="viewType == 0" id="list">
+<div *ngIf="viewType == 1" id="list">
   <list-item-1 
     *ngFor="let item of PartIDs"
     [sku]="item.sku" 

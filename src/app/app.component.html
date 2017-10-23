@@ -1,10 +1,11 @@
 <div id="app">
     <header>
+        <!--
         <div class="flex">
             <img src="assets/mava.png" width="50px" alt="">
             <div class="search">
                 <span *ngIf="login.status == true; else statuselse">Hola {{new_user.first_name}} {{new_user.last_name}}</span>
-                <!--or-->
+                
                 <ng-template #statuselse><button *ngIf="state==='inactive'"(click)="toggleState()">Login!</button></ng-template>
                 <div id="bag">
                     <div id="bag-count" [@cartState]="count" (click) =  "rotateBag()">{{BAG.count}}</div>
@@ -43,14 +44,36 @@
         <a routerLink="/catalog-list">home</a>
         <a routerLink="/checkout/cart">Checkout</a>
         <a *ngIf="login.status == true;" routerLink="/user">User</a>
+        -->
+        <i class="material-icons" (click)="drawer_open()">menu</i>
+        <h1>my E-Commerce</h1>
+        <i class="material-icons icon-blue" (click)="cart_open()">shopping_cart</i>
     </header>
-    <div id="contenido">
+    <div id="content">
         <router-outlet></router-outlet>
-        <router-outlet name="login"></router-outlet>
     </div>
     <footer>
+        <h1>Login</h1>
+    </footer>  
+    <div id="drawer">
+        <div id="drawer-header">
+            <h1>AppName</h1>
+            <i class="material-icons icon-blue" (click)="close_all()">close</i>
+            
+        </div>
         <ul>
-            <li *ngFor="let menu of menuActual" (click)="menuAction1(menu)"><a>{{menu.name}}</a></li>
+            <li><a href="#"><i class="material-icons icon-blue">shopping_cart</i>cart</a></li>
+            <li><a href="#"><i class="material-icons icon-blue">done_all</i>checkout</a></li>
+            <li><a href="#"><i class="material-icons icon-blue">face</i>profile</a></li>
+            <li><a href="#"><i class="material-icons icon-blue">store</i>orders</a></li>
+            <li><a href="#"><i class="material-icons icon-blue">payment</i>payments</a></li>
+            <li><a href="#"><i class="material-icons icon-blue">help</i>faq</a></li>
         </ul>
-    </footer>    
+        <div id="drawer-footer">
+            <h1>@feervalero</h1>
+        </div>
+    </div>
+    <div id="drawer-shadow" (click)="close_all()" >
+        
+    </div>  
 </div>

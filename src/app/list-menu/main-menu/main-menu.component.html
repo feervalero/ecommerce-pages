@@ -1,10 +1,16 @@
+<span id="container">
+  <button (click)="showNav()">Explore</button>
+</span>
 <div id="main-menu-container">
-  <div id="main-menu-nav">
-    <span *ngIf="idItem != 'root'">
-      <a (click)="openMenu(previousParent,idItem)">go to previousParent</a>
-    </span>
+  <div id="main-menu-nav" class="show-nav">
+    <div id="back" *ngIf="idItem != 'root'">
+      <a (click)="openMenu(previousParent,idItem)"><i class="material-icons">arrow_back</i></a>
+    </div>
     <ul id="menuBar">
-      <li *ngFor="let item of menuItems"><a (click)="openMenu(item.href,item.parent)">{{item.displayname}}</a></li>
+      <li *ngFor="let item of menuItems">
+        <a (click)="openMenu(item.href,item.parent)">{{item.displayname}}</a>
+        <i class="material-icons" (click)="closeNav()">arrow_forward</i>
+      </li>
     </ul>
   </div>
   <div id="main-menu-content">

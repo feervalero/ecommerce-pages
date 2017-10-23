@@ -110,7 +110,20 @@ export class AppComponent implements OnInit{
     this.cart = this.cart === 'cart' ? 'count' : 'cart';
     console.log("cart",this.cart);
   }
+  drawer_open(){
+    var d = document.getElementById("drawer");
+    d.className += " drawer-open";
 
+    var d = document.getElementById("drawer-shadow");
+    d.className += " shadow-open";
+  }
+  close_all(){
+    var e = document.getElementById("drawer");
+    e.className = '';
+
+    var es = document.getElementById("drawer-shadow");
+    es.className = '';
+  }
   saveInformation(){
     if(this.new_user.email!=''){
       this.userService.searchByEmail(this.new_user.email).then(x =>{

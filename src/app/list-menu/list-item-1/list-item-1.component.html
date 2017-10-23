@@ -1,4 +1,4 @@
-<div id="list-item-1-container">
+<!--<div id="list-item-1-container">
   <div id="list-item-image" class="flex-child">
      <img src="assets/mava.png" alt="img">
   </div>
@@ -14,4 +14,18 @@
       <input type="text" placeholder="0" [(ngModel)]="quantity" class="flex-child">
       <span (click) = "addCartOne(sku)">+</span>
   </div>
+</div>
+-->
+<div class="card">
+    
+    <div class="content">
+        <div id="name-label"><a href="/product-detail/{{sku}}">{{displayname}}</a></div>
+        <div>{{sku}}</div>
+    </div>
+    <div class="price">
+        ${{price}}
+    </div>
+    <div class="foot">
+        <span class="float-right">Disponible</span>
+    </div>
 </div>

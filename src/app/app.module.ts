@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { RouterModule,Routes } from "@angular/router";
 import { UserService } from "./user.service";
 import { HttpModule } from "@angular/http";
-import { CatalogComponent } from './catalog/catalog.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './checkout/cart/cart.component';
 import { CookieModule } from "ngx-cookie";
@@ -24,7 +23,7 @@ const routes: Routes = [
     path:"", redirectTo:"/catalog-list",pathMatch:"full"
   },
   {
-    path:"catalog-list", component:CatalogComponent,children:[
+    path:"catalog-list", children:[
       {
         path:'',component:MainMenuComponent
       }
@@ -67,7 +66,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    CatalogComponent,
     ListMenuComponent,
     LoginComponent,
     ProductDetailComponent,

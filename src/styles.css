@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 *{
-    margin: 0;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin:0px;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4vw;
 }
 .flex-container{
     
@@ -72,3 +74,6 @@
   i:hover{
       cursor: pointer;
   }
+  .icon-blue{
+        color:dodgerblue;
+    }
