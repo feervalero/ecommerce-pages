@@ -4,7 +4,7 @@ import 'rxjs/add/operator/toPromise';
 
 @Injectable()
 export class MenusService{
-
+  response:any;
   constructor(private http:Http) { }
 
   getMenuAll():Promise<any>{
@@ -17,6 +17,8 @@ export class MenusService{
   getMenus(): Promise<any>{
     return this.http.request("assets/CATALOGXML.xml").toPromise().then(r=>r["_body"]);
   }
+
+  
 
   ErrorHandler(error: any):Promise<any>{
     console.log("Error has occurred",error);

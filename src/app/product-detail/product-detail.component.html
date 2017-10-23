@@ -1,13 +1,11 @@
-<div *ngIf="SKU">
-  <!--TODO SCROLL UP PARA MINIATURAS-->
+<!--<div *ngIf="SKU">
   <div *ngIf="SKU.images">
     <img src="{{SKU.images.colorchip}}" alt="{{SKU.sku}}">
     <img src="{{SKU.images.colorchip}}" alt="{{SKU.sku}}">
-    <!--TODO ZOOM TO BIG IMAGE-->
     <span *ngIf="SKU.new == 1">NEW</span><img src="{{SKU.images.hero}}" alt="{{SKU.sku}}">
   </div>
   <div>
-    <h1>{{SKU.display_name}}</h1>
+    <h1>{{SKU.name}}</h1>
     <h5>{{SKU.sku}}</h5>
     <h3>{{SKU.price}}</h3>
     <div class="qty">
@@ -16,11 +14,37 @@
       <span>+</span>
     </div>
   </div>
-  <!-- descripcion-->
   <div>
     <h3>Product description</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, adipisci ratione corrupti repellendus repudiandae asperiores soluta odit a minima ipsa minus illo earum, quisquam similique consectetur provident consequatur iure laborum.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, adipisci ratione corrupti repellendus repudiandae asperiores soluta odit a minima ipsa minus illo earum, quisquam similique consectetur provident consequatur iure laborum.</p>
   </div>
   <br>
+</div>
+-->
+<div id="content">
+    <header>
+        <div id="h-1">
+            {{SKU.name}}
+        </div>
+        <div id="slider">
+            <span class="left"><i class="material-icons md-10">favorite</i></span>
+            <span class="right"><i class="material-icons md-10">check_circle</i></span>
+        </div>
+        <div id="actions">
+            <span class="float-left"><i class="material-icons md-18">favorite</i> 99 Likes</span>
+            <span class="price">${{SKU.price}}</span>
+            <span class="float-right"><i class="material-icons md-18">chat_bubble</i> 99 Comments</span>
+        </div>
+        <div id="buy-button">
+            <button>Buy now</button>
+        </div>
+    </header>
+    <footer>
+        <div>
+            <span id="count-likes">674</span>
+            <span id="tag">PEOPLE LIKES THIS</span>
+        </div>
+        <a href="#">@feervalero</a>
+    </footer>
 </div>

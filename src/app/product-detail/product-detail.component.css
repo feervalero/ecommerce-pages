@@ -1,0 +1,95 @@
+header{
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color:tomato;
+    width: 100vw;
+    height: 30vh;
+}
+#slider{
+    background-position-x: center;
+    background-size: auto 100%;
+    width: 100vw;
+    flex:100%;
+}
+#actions{
+    height:100px;
+    width: 100vw;
+    text-align: center
+}
+.float-left{
+    line-height: 10vh;
+    color:#888;
+    position:absolute;
+    left:2vw;
+}
+.float-right{
+    color:#888;
+    position: absolute;
+    right:2vw;
+    line-height: 10vh;
+}
+.price{
+    font-size: 7vw;
+    margin-top: 63px;
+    font-weight: bold;
+    position: relative;
+    top: 2vh;
+}
+#buy-button{
+    width: 100vw;
+    height:50px;
+    margin:4vh 0;
+}
+button{
+    width:70vw;
+    margin:5px 15vw;
+    height:30px;
+    background-color: #666;
+    color:white;
+    bordeR:none;
+    font-weight: 500;
+    font-size: 5vw;
+}
+#h-1{
+    margin:3vh 10vw;
+    width:80vw;
+    font-size: 6vw;
+    font-weight: 500;
+    text-align: center;
+}
+.material-icons.md-18 { font-size: 4vw; }
+.material-icons.md-10 { font-size: 10vw; }
+#slider .left{
+    position: absolute;
+    left:5vw;
+    color:tomato;
+}
+#slider .right{
+    position: absolute;
+    right:5vw;
+    color:forestgreen;
+}
+footer div{
+    text-align: center;
+    color:white;
+    padding: 4vh;
+}
+#count-likes{
+    font-weight: bold;
+}
+footer a{
+    position: absolute;
+    width: 94vw;
+    bottom: 0;
+    margin-left: 2vw;
+    text-align: center;
+    padding: 2vh 1vw;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(255,255,255,.5);
+}
