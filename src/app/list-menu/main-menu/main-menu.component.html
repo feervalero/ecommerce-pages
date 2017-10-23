@@ -2,8 +2,11 @@
   <button (click)="showNav()">Explore</button>
 </span>
 <div id="main-menu-container">
-  <div id="main-menu-nav" class="show-nav">
-    <div id="back" *ngIf="idItem != 'root'">
+  <div id="main-menu-nav">
+    <div class="back close">
+          <a (click)="closeNav()"><i class="material-icons">close</i></a>
+    </div>
+    <div class="back" *ngIf="idItem != 'root'">
       <a (click)="openMenu(previousParent,idItem)"><i class="material-icons">arrow_back</i></a>
     </div>
     <ul id="menuBar">

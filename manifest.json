@@ -1,0 +1,31 @@
+Monday at 10:00am (Pacific) and streaming live on YouTube. Schedule.
+Overview
+Architectural Patterns
+Design & User Experience
+Integration & Engagement
+Add to Home Screen
+App Install Banners
+Web App Manfiest
+Additional Colors and Icons
+{
+  "short_name": "E-Commerce",
+  "name": "@feervalero",
+  "icons": [
+    {
+      "src": "/dist/assets/mava.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/dist/assets/mava.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/dist/assets/mava.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/"
+}

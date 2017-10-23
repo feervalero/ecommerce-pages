@@ -66,6 +66,9 @@ ul{
     position: absolute;
     margin:12px;
 }
-#back i{
+.back i{
     margin:12px;
+}
+.close{
+    border-bottom: 1px solid black;
 }
