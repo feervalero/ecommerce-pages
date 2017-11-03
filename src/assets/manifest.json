@@ -1,19 +1,22 @@
 {
   "short_name": "E-Commerce",
-  "name": "@feervalero",
+  "name": "my E-Commerce",
+  "author":"@feervalero",
+  "orientation": "portrait",
+  "display": "fullscreen",
   "icons": [
     {
-      "src": "/dist/assets/mava.png",
+      "src": "mava.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "/dist/assets/mava.png",
+      "src": "mava.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/dist/assets/mava.png",
+      "src": "mava.png",
       "type": "image/png",
       "sizes": "192x192"
     }
