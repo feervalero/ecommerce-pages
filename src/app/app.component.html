@@ -53,7 +53,7 @@
         <router-outlet></router-outlet>
     </div>
     <footer>
-        <h1>Login</h1>
+        <h1 (click)="toggleState()">Login</h1>
     </footer>  
     <div id="drawer">
         <div id="drawer-header">
@@ -77,4 +77,35 @@
     <div id="drawer-shadow" (click)="close_all()" >
         
     </div>  
+    <div id="loginPanel" [@heroState]="state">
+        <div class="blc">Logged: {{login.status}}</div>
+        <span class="blc" id="login-panel-logo">
+            <img src="assets/mava.png">
+        </span>
+        <input class="blc" [(ngModel)]="login.email" type="text" placeholder="email">
+        <input class="blc" [(ngModel)]="login.password" type="password" placeholder="password">
+        <button class="blc" (click)="loginWithEmail()">Login</button>
+        <a class="blc" (click)="registerShow()">Register here</a>
+        <div class="blc">
+            <button (click)="toggleState()">Salir</button>
+        </div>
+        <div id="register" [@registerState]="register">
+            <h1>Enter your information:</h1>
+            <input type="text" [(ngModel)]="new_user.first_name" name="first_name" placeholder="first_name">
+            <input type="text" [(ngModel)]="new_user.middle_name" name="middle_name" placeholder="middle_name">
+            <input type="text" [(ngModel)]="new_user.last_name" name="last_name" placeholder="last_name">
+            <input type="text" [(ngModel)]="new_user.country" name="country" placeholder="Country">
+            <input type="text" [(ngModel)]="new_user.state" name="state" placeholder="State">
+            <input type="text" [(ngModel)]="new_user.city" name="city" placeholder="City">
+            <input type="text" [(ngModel)]="new_user.neigh" name="neigh" placeholder="Neighborhood">
+            <input type="text" [(ngModel)]="new_user.postal_code" name="postal_code" placeholder="Postal Code">
+            <input type="text" [(ngModel)]="new_user.street_number" name="street_number" placeholder="Street and Number">
+            <input type="text" [(ngModel)]="new_user.email" name="email" placeholder="email">
+            <input type="text" [(ngModel)]="new_user.phone" name="phone" placeholder="phone">
+            <input type="text" [(ngModel)]="new_user.age" name="age" placeholder="age">
+            <input type="text" [(ngModel)]="new_user.genre" name="genre" placeholder="genre">
+            <button (click)="registerShow()">Cancel</button>
+            <button (click)="saveInformation()">SAVE</button>
+        </div>
+    </div>
 </div>

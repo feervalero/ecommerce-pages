@@ -104,6 +104,19 @@
 		opacity: 0;
 		right:100vw;
 	}
+	#loginPanel{
+		position: fixed;
+		top:50px;
+		left:0;
+		width: 100vw;
+		height:100vh;
+		background-color: red;
+		text-align: center;
+	}
+	#login-panel-logo{
+		width:50vw;
+	}
+
 	/*animations:*/
 	@keyframes drawerOpen {
 		from {transform:translateX(0)}

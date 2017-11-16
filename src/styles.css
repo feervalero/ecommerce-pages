@@ -4,6 +4,7 @@
     padding:0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 4vw;
+    box-sizing: border-box;
 }
 .flex-container{
     
