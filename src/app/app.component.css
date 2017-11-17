@@ -114,6 +114,7 @@
 		background-color:white;
 		text-align: center;
 		overflow-y: scroll;
+		z-index: 90;
 	}
 	#loginp h1{
 		margin-top: 20px;
@@ -199,5 +200,11 @@
 		width:100vw;
 		height:70vh;
 		overflow-y: scroll;
-		
+		z-index: 90;
+	}
+	#closeBtnLogin{
+		position:absolute;
+		top:0;
+		left:0;
+		margin:24px;
 	}

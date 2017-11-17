@@ -28,15 +28,27 @@ import { User } from "./user";
       transition('inactive => active', animate('400ms ease-in')),
       transition('active => inactive', animate('400ms ease-out'))
     ]),
-    trigger('cartState',[
-      state('cart',style({
-        transform:'rotateY(0deg)'
+    trigger('shadowState', [
+      state('inactive', style({
+        opacity: 0,
+        right: '100vw'
       })),
-      state('count',style({
-        transform:'rotateY(90deg)',
+      state('active', style({
+        opacity: 1,
+        right: 0
       })),
-      transition('cart => count', animate('300ms ease-in')),
-      transition('count => cart', animate('300ms ease-out'))
+      transition('inactive => active', animate('400ms linear')),
+      transition('active => inactive', animate('1ms ease-out'))
+    ]),
+    trigger('drawerState', [
+      state('inactive', style({
+        left: '-75vw'
+      })),
+      state('active', style({
+        left: '-1vw'
+      })),
+      transition('inactive => active', animate('400ms ease-in')),
+      transition('active => inactive', animate('1ms ease-out'))
     ])
   ],
   providers:[UserService]
@@ -56,6 +68,8 @@ export class AppComponent implements OnInit{
   }
   public loginstate = 'inactive';
   public registerState = 'inactive';
+  public shadowState = 'inactive';
+  public drawerState = 'inactive';
   public cart  = "cart";
   constructor(private cookieService:CookieService,private userService:UserService){}
   public a: any;
@@ -94,27 +108,28 @@ export class AppComponent implements OnInit{
   }
   //show login panel
   toggleLoginState() {
+    this.shadowToggle();
     this.loginstate = this.loginstate === 'active' ? 'inactive' : 'active';
   }
   //show register panel
   registerToggle(){
-    console.log("register");
     this.registerState = this.registerState === 'active' ? 'inactive' : 'active';
-  
   }
-  drawer_open(){
-    var d = document.getElementById("drawer");
-    d.className += " drawer-open";
+  //show shadow
+  shadowToggle(){
+    this.shadowState = (this.shadowState === 'active') ? 'inactive': 'active';
+  }
 
-    var d = document.getElementById("drawer-shadow");
-    d.className += " shadow-open";
+  drawer_open(){
+    this.drawerState = 'active';
+    this.shadowState = 'active';
+
   }
   close_all(){
-    var e = document.getElementById("drawer");
-    e.className = '';
-
-    var es = document.getElementById("drawer-shadow");
-    es.className = '';
+    this.drawerState = 'inactive';
+    this.shadowState = 'inactive';
+    this.loginstate = 'inactive'; 
+    this.registerState = 'inactive';
   }
   saveInformation(){
     if(this.new_user.email!=''){

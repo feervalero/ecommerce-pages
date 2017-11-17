@@ -55,11 +55,10 @@
     <footer>
         <h1 (click)="toggleLoginState()">Login</h1>
     </footer>  
-    <div id="drawer">
+    <div id="drawer" [@drawerState]="drawerState">
         <div id="drawer-header">
             <h1>AppName</h1>
             <i class="material-icons icon-blue" (click)="close_all()">close</i>
-            
         </div>
         <ul>
             <li><a href="/catalog-list"><i class="material-icons icon-blue">home</i>home</a></li>
@@ -74,10 +73,11 @@
             <h1>@feervalero</h1>
         </div>
     </div>
-    <div id="drawer-shadow" (click)="close_all()" >
+    <div id="drawer-shadow" [@shadowState] = "shadowState" (click)="close_all()" >
         
     </div>  
     <div id="loginp" [@loginState]="loginstate">
+        <i class="material-icons" id="closeBtnLogin" (click)="close_all()">close</i>
         <h1>Welcome</h1>
         <img src="assets/mava.png" alt="logo">
         <input type="text" id="user" placeholder="username">
