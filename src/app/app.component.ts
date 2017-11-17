@@ -55,7 +55,7 @@ export class AppComponent implements OnInit{
     password:''
   }
   public loginstate = 'inactive';
-  public registerState = 'active';
+  public registerState = 'inactive';
   public cart  = "cart";
   constructor(private cookieService:CookieService,private userService:UserService){}
   public a: any;
@@ -100,6 +100,7 @@ export class AppComponent implements OnInit{
   registerToggle(){
     console.log("register");
     this.registerState = this.registerState === 'active' ? 'inactive' : 'active';
+  
   }
   drawer_open(){
     var d = document.getElementById("drawer");

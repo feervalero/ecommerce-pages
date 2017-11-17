@@ -108,9 +108,12 @@
 		position: fixed;
 		left:0;
 		width: 100vw;
+		top:15vh;
 		height:70vh;
+		box-sizing: border-box;
 		background-color:white;
 		text-align: center;
+		overflow-y: scroll;
 	}
 	#loginp h1{
 		margin-top: 20px;
@@ -172,7 +175,7 @@
 		animation-timing-function: ease-out;
 		animation-fill-mode: forwards;
 	}
-		@keyframes shadowOpen {
+	@keyframes shadowOpen {
 		0% {
 			top:-100vw;
 			opacity: 0;
