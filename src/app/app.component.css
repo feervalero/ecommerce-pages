@@ -104,19 +104,43 @@
 		opacity: 0;
 		right:100vw;
 	}
-	#loginPanel{
+	#loginp{
 		position: fixed;
-		top:50px;
 		left:0;
 		width: 100vw;
-		height:100vh;
-		background-color: red;
+		height:70vh;
+		background-color:white;
 		text-align: center;
 	}
-	#login-panel-logo{
-		width:50vw;
+	#loginp h1{
+		margin-top: 20px;
+		font-size: 6vw;
 	}
-
+	#loginp img{
+		width: 40vw;
+		margin:20px 30vw;
+	}
+	#loginp input{
+		width:90vw;
+		height:auto;
+		border:none;
+		margin:10px 5vw;
+		font-size: 5vw;
+		text-align: center;
+		background-color: transparent;
+		border-bottom: 1px solid gray;
+		outline: none;
+	}
+	#btnLogin{
+		background-color:green;
+		border:0;
+		outline: none;
+		width:80vw;
+		margin:10vw;
+		height:auto;
+		font-size: 6vw;
+		padding:6px 0;
+	}
 	/*animations:*/
 	@keyframes drawerOpen {
 		from {transform:translateX(0)}
@@ -142,9 +166,35 @@
 			opacity: 1;
 		}
 	}
-	.shadow-open{
+	.login-open{
 		animation-name: shadowOpen;
 		animation-duration: 500ms;
 		animation-timing-function: ease-out;
 		animation-fill-mode: forwards;
+	}
+		@keyframes shadowOpen {
+		0% {
+			top:-100vw;
+			opacity: 0;
+		}
+		100% {
+			top:100px;
+			opacity: 1;
+		}
+	}
+	.login-open{
+		animation-name: shadowOpen;
+		animation-duration: 500ms;
+		animation-timing-function: ease-out;
+		animation-fill-mode: forwards;
+	}
+	app-register{
+		background-color:rgb(40, 40, 41);
+		position: fixed;
+		top:15vh;
+		left:100vw;
+		width:100vw;
+		height:70vh;
+		overflow-y: scroll;
+		
 	}

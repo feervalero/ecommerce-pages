@@ -1,0 +1,19 @@
+<header>
+    <i class="material-icons" (click)="registerToggle()">close</i>
+    <h1>Enter your information:</h1>
+</header>
+<input type="text" [(ngModel)]="new_user.first_name" name="first_name" placeholder="first_name">
+<input type="text" [(ngModel)]="new_user.middle_name" name="middle_name" placeholder="middle_name">
+<input type="text" [(ngModel)]="new_user.last_name" name="last_name" placeholder="last_name">
+<input type="text" [(ngModel)]="new_user.country" name="country" placeholder="Country">
+<input type="text" [(ngModel)]="new_user.state" name="state" placeholder="State">
+<input type="text" [(ngModel)]="new_user.city" name="city" placeholder="City">
+<input type="text" [(ngModel)]="new_user.neigh" name="neigh" placeholder="Neighborhood">
+<input type="text" [(ngModel)]="new_user.postal_code" name="postal_code" placeholder="Postal Code">
+<input type="text" [(ngModel)]="new_user.street_number" name="street_number" placeholder="Street and Number">
+<input type="text" [(ngModel)]="new_user.email" name="email" placeholder="email">
+<input type="text" [(ngModel)]="new_user.phone" name="phone" placeholder="phone">
+<input type="text" [(ngModel)]="new_user.age" name="age" placeholder="age">
+<input type="text" [(ngModel)]="new_user.genre" name="genre" placeholder="genre">
+<button id="registerCancel" (click)="registerShow()">Cancel</button>
+<button id="registerSave" (click)="saveInformation()">Save</button>

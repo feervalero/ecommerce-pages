@@ -8,22 +8,22 @@ import { User } from "./user";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   animations: [
-    trigger('heroState', [
+    trigger('loginState', [
       state('inactive', style({
-        transform: 'translateY(-150%)'
+        top:"-100vh"
       })),
       state('active',   style({
-        transform: 'translateY(0%)'
+        top: "100px"
       })),
       transition('inactive => active', animate('400ms ease-in')),
       transition('active => inactive', animate('400ms ease-out'))
     ]),
-    trigger('registerState', [
+    trigger('register', [
       state('inactive', style({
-        transform: 'translateY(220vh)'
+        left: "-100vw"
       })),
       state('active',   style({
-        transform: 'translateY(0vh)'
+        left: "0"
       })),
       transition('inactive => active', animate('400ms ease-in')),
       transition('active => inactive', animate('400ms ease-out'))
@@ -54,8 +54,8 @@ export class AppComponent implements OnInit{
     email:'',
     password:''
   }
-  public state = 'inactive';
-  public register = 'inactive';
+  public loginstate = 'inactive';
+  public registerState = 'active';
   public cart  = "cart";
   constructor(private cookieService:CookieService,private userService:UserService){}
   public a: any;
@@ -92,23 +92,14 @@ export class AppComponent implements OnInit{
   getCookie(key:string){
     return this.cookieService.getObject(key);
   }
-  loginShow(st: boolean){
-    if(st == false){
-
-    }
+  //show login panel
+  toggleLoginState() {
+    this.loginstate = this.loginstate === 'active' ? 'inactive' : 'active';
   }
-  toggleState() {
-    this.state = this.state === 'active' ? 'inactive' : 'active';
-  }
-  toggleStatus() {
-    this.login.status = this.login.status === true ? false : true;
-  }
-  registerShow(){
-    this.register = this.register === 'active' ? 'inactive' : 'active';
-  }
-  rotateBag(){
-    this.cart = this.cart === 'cart' ? 'count' : 'cart';
-    console.log("cart",this.cart);
+  //show register panel
+  registerToggle(){
+    console.log("register");
+    this.registerState = this.registerState === 'active' ? 'inactive' : 'active';
   }
   drawer_open(){
     var d = document.getElementById("drawer");
@@ -133,8 +124,8 @@ export class AppComponent implements OnInit{
             console.log("insert response",y._id);
             this.cookieService.putObject("user",y);
             this.login.status = true;
-            this.register = 'inactive';
-            this.state = 'inactive';
+            this.registerState = 'inactive';
+            this.loginstate = 'inactive';
             //registered animation
           });
         }
@@ -149,9 +140,8 @@ export class AppComponent implements OnInit{
       }else{
         this.new_user = res;
         this.cookieService.putObject("user",res);
-        this.registerShow();
-        this.toggleState();
-        this.toggleStatus();
+        this.registerToggle();
+        this.toggleLoginState();
       }
     });
   }

@@ -18,6 +18,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { AddressComponent } from './checkout/address/address.component';
 import { PaymentComponent } from './checkout/payment/payment.component';
 import { ConfirmationComponent } from './checkout/confirmation/confirmation.component';
+import { RegisterComponent } from "./register/register";
 const routes: Routes = [
   {
     path:"", redirectTo:"/catalog-list",pathMatch:"full"
@@ -76,7 +77,8 @@ const routes: Routes = [
     CheckoutComponent,
     AddressComponent,
     PaymentComponent,
-    ConfirmationComponent
+    ConfirmationComponent,
+    RegisterComponent
     
   ],
   imports: [
